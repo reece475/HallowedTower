@@ -1,0 +1,14 @@
+table.oddsTable {
+	border: 1px solid #CCC;
+} 
+
+.oddsTable td {
+	padding: 4px;
+	margin: 3px;
+	border: 1px solid #CCC;
+}
+.oddsTable th {
+	background-color:var(--highlights);
+	color: var(--white);
+	font-weight: bold;
+}

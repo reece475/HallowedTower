@@ -1,0 +1,8 @@
+.comparisonTable > thead > tr{
+    background-color: var(--highlights);
+    text-decoration: underline;
+}
+
+figcaption{
+    color: var(--black);
+}

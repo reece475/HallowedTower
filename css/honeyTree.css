@@ -1,0 +1,27 @@
+#here{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#honeyTreeLocations{
+    list-style-image: url(../images/honeyTrees/Sprite_DP_Honey_Tree.png) ;
+}
+
+table.honeyTable {
+	border: 1px solid #CCC;
+} 
+.honeyTable td {
+	padding: 4px;
+	margin: 3px;
+	border: 1px solid #CCC;
+}
+.honeyTable th {
+	background-color:var(--highlights);
+	color: var(--white);
+	font-weight: bold;
+}
+
+#honeyBold > td{
+    text-decoration: underline;
+    background-color:var(--highlights);
+}
