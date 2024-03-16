@@ -76,7 +76,7 @@ header{
     color: var(--white);
 }
 
-/* Text, Color, and Alignment Left Sidebar */
+/* CSS for Nav */
 nav{
     grid-area: nav;
     text-align: center;
@@ -87,7 +87,7 @@ nav{
     font-size: 23px;
 }
 
-/* General CSS for Socials/Affiliates */
+/* CSS for Socials/Affiliates */
 aside{
     grid-area: side;
     text-align: center;
@@ -108,10 +108,11 @@ aside{
     border-radius: 10%;
     list-style-type: none;
     padding-inline-start: 0px;
+    padding: 2%;
 }
 
 .sidebarList > li{
-    margin: 3px;
+    margin: 5px;
 }
 
 /* Footer Styles */
