@@ -1,0 +1,17 @@
+            <h1> General</h1>
+            <ul class="sidebarList">
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/updates.html">Updates</a></li>
+            </ul>
+            <h1>Guides</h1>
+            <ul class="sidebarList">
+                <li><a href="pages/honeyTrees.html">Shiny Hunting Honey Trees</a></li>
+                <li><a href="pages/cartridges.html">Detecting Counterfeit Cartridges</a></li>
+                <li><a href="pages/spiritomb.html">Catching Spiritomb</a></li>
+            </ul>
+
+            <h1>Resources</h1>
+            <ul class="sidebarList">
+                <li><a href="pages/honeyTrees.html#chapter2honey">Honey Tree TID + SID Checker</a></li>
+                <li><a href="pages/shinyChance.html">Shiny Chance Tool</a></li>
+            </ul>
