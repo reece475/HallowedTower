@@ -1,0 +1,6 @@
+            <h1>Socials</h1>
+            <ul class="sidebarList">
+                <li><a href="https://twitch.tv/ronk475" target="_blank">Twitch</a></li>
+                <li><a href="https://www.youtube.com/channel/UCaEn4UCrtjKdICHz-vvCguQ" target="_blank">YouTube</a></li>
+                <li><a href="https://twitter.com/Ronk475" target="_blank">Twitter</a></li>
+            </ul>
