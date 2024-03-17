@@ -2,5 +2,5 @@
 $(function(){
     $("#navSidebar").load("../sidebars/navSidebar.txt");
     $("#asideSidebar").load("../sidebars/asideSidebar.txt");
-    $("#footerSidebar").load("../sidebars/footerInfo.txt");
+    $("#footerInfo").load("../sidebars/footerInfo.txt");
   });
