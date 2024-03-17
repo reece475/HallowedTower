@@ -52,6 +52,28 @@ body{
     height: 100vh;
 }
 
+@media (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "side"
+        "footer";
+  
+      grid-template-columns: 1fr;
+      grid-template-rows:
+        auto /* Header */
+        auto /* Nav */
+        1fr /* Content */
+        auto /* Sidebar */
+        auto; /* Footer */
+    }
+    table{
+        width: 100%;
+    }
+}
+  
 /* Style for the header */
 header{
     grid-area: header;
@@ -255,28 +277,11 @@ input{
     font-size: 20px;
 }
 
-@media (max-width: 768px) {
-    .container {
-      grid-template-areas:
-        "header"
-        "nav"
-        "content"
-        "side"
-        "footer";
-  
-      grid-template-columns: 1fr;
-      grid-template-rows:
-        auto /* Header */
-        minmax(auto) /* Nav */
-        1fr /* Content */
-        minmax(auto) /* Sidebar */
-        auto; /* Footer */
-    }
-  
-    nav, aside {
-      margin: 0;
-    }
-  }
+
+nav, aside {
+    margin: 0;
+}
+
 
 
 
