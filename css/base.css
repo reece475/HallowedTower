@@ -29,6 +29,7 @@ a:hover{
 #mobileButton{
     display: none;
     margin-top: 7px;
+    padding: 5px;
 }
 
 /* Sets the background color of the webpage */
@@ -80,6 +81,8 @@ body{
         auto /* Sidebar */
         1fr /* Content */
         auto; /* Footer */
+
+        width:100%;
     }
     /* Shows button when on mobile */
     #mobileButton{
@@ -89,6 +92,8 @@ body{
     #navSidebar, #asideSidebar{
         display:none;
     }
+
+
 }
   
 /* Style for the header */
