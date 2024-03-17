@@ -26,6 +26,11 @@ a:hover{
     text-decoration: underline;
 }
 
+#mobileButton{
+    display: none;
+    margin-top: 7px;
+}
+
 /* Sets the background color of the webpage */
 body{
     background-color: var(--background);
@@ -50,27 +55,39 @@ body{
     margin-top: 1%;
     margin-bottom: 1%;
     height: 100vh;
+
 }
 
-@media (max-width: 768px) {
+/* Sets the display for the nav and aside for the toggle button on mobile view */
+#navSidebar, #asideSidebar{
+    display: block;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 768px) {
     .container {
       grid-template-areas:
         "header"
         "nav"
-        "content"
         "side"
+        "content"
         "footer";
   
       grid-template-columns: 1fr;
       grid-template-rows:
         auto /* Header */
         auto /* Nav */
-        1fr /* Content */
         auto /* Sidebar */
+        1fr /* Content */
         auto; /* Footer */
     }
-    table{
-        width: 100%;
+    /* Shows button when on mobile */
+    #mobileButton{
+        display: block;
+    }
+    /* Hides sidebar and aside when on mobile */
+    #navSidebar, #asideSidebar{
+        display:none;
     }
 }
   
@@ -226,7 +243,7 @@ main{
     padding: 20px;
 }
 
-
+/* Highlighted Red Areas */
 .important{
     background-color: var(--highlights);
     padding: 5px;
@@ -234,6 +251,7 @@ main{
     font-family: gen4Pokemon;
 }
 
+/* Highlighted Grey Sections */
 .highlightSection {
     background-color: var(--submain);
     padding: 10px;
@@ -277,10 +295,10 @@ input{
     font-size: 20px;
 }
 
-
 nav, aside {
     margin: 0;
 }
+
 
 
 
