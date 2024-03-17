@@ -28,8 +28,6 @@ a:hover{
 
 #mobileButton{
     display: none;
-    margin-top: 7px;
-    padding: 5px;
 }
 
 /* Sets the background color of the webpage */
@@ -83,6 +81,8 @@ body{
         auto; /* Footer */
 
         width:100%;
+        margin: 0px;
+        height: 100vh;
     }
     /* Shows button when on mobile */
     #mobileButton{
@@ -93,6 +93,9 @@ body{
         display:none;
     }
 
+    body{
+        margin: 0px;
+    }
 
 }
   
