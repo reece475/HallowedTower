@@ -309,6 +309,7 @@ nav, aside {
     margin: 0;
 }
 
+
 .affiliateSection{
     background-color: var(--highlights);
     margin-top: 5%;
@@ -319,12 +320,18 @@ nav, aside {
     padding: 5px;
 }
 
-.affiliateSection > a:hover > img{
+/* Sets border around box, makes it the same color as the background
+then on hover simply changes the color to black */
+.affiliateSection > a > img{
+    box-sizing: content-box;
+    border: 2px dashed var(--highlights);
+}
+
+.affiliateSection > a > img:hover{
     border-style: dashed;
     border-width: 2px;
     border-color: var(--black);
 }
-
 
 
 
