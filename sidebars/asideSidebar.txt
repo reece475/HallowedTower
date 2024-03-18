@@ -5,3 +5,11 @@
                 <li><a href="https://www.youtube.com/channel/UCaEn4UCrtjKdICHz-vvCguQ" target="_blank">YouTube</a></li>
                 <li><a href="https://twitter.com/Ronk475" target="_blank">Twitter</a></li>
             </ul>
+
+            <h1>Affiliates</h1>
+            <div class="affiliateSection">
+                <p>Some other neat sites!</p>
+                <a href="https://pamtre-berry.neocities.org/">
+                    <img src="../images/affiliates/pamtreicon.png" style="max-width: 88px; height: auto;">
+                </a>
+            </div>

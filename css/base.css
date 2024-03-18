@@ -309,6 +309,22 @@ nav, aside {
     margin: 0;
 }
 
+.affiliateSection{
+    background-color: var(--highlights);
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.affiliateSection > a:hover > img{
+    border-style: dashed;
+    border-width: 2px;
+    border-color: var(--black);
+}
+
 
 
 
