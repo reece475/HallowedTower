@@ -9,7 +9,7 @@
             <h1>Affiliates</h1>
             <div class="affiliateSection">
                 <p>Some other neat sites!</p>
-                <a href="https://pamtre-berry.neocities.org/">
+                <a href="https://pamtre-berry.neocities.org/" target="_blank">
                     <img src="../images/affiliates/pamtreicon.png" style="max-width: 88px; height: auto;">
                 </a>
             </div>
