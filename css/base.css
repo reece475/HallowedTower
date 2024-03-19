@@ -322,16 +322,22 @@ nav, aside {
 
 /* Sets border around box, makes it the same color as the background
 then on hover simply changes the color to black */
+.affiliateSection > a{
+    display: inline-block;
+}
+
 .affiliateSection > a > img{
-    box-sizing: content-box;
     border: 2px dashed var(--highlights);
+    box-sizing: border-box;
 }
 
 .affiliateSection > a > img:hover{
+    box-sizing: border-box;
     border-style: dashed;
     border-width: 2px;
     border-color: var(--black);
 }
+
 
 
 
