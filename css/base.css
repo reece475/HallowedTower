@@ -107,7 +107,7 @@ header{
     border-radius: 15px 15px 0px 0px; /*Rounds the top edges*/
     font-family: gen4Pokemon;
     font-size: 23px;
-    border-bottom: 5px solid var(--submain); /*Line on bottom of header*/
+    border-bottom: 2px solid var(--submain); /*Line on bottom of header*/
     height: auto;
 }
 
@@ -115,7 +115,7 @@ header{
     width: auto;
     height: auto;
     margin-top: 5px;
-    padding-bottom: 2px;
+    margin-bottom: -6px;
 }
 
 #bannerText{
