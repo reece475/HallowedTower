@@ -326,17 +326,21 @@ then on hover simply changes the color to black */
     display: inline-block;
 }
 
+ 
 .affiliateSection > a > img{
     border: 2px dashed var(--highlights);
-    box-sizing: border-box;
+
 }
 
+
 .affiliateSection > a > img:hover{
-    box-sizing: border-box;
     border-style: dashed;
     border-width: 2px;
     border-color: var(--black);
 }
+
+
+
 
 
 
