@@ -64,7 +64,9 @@ body{
 /* Shows button when on mobile */
 #mobileButton{
     display: block;
+    background: var(--main);
 }
+
 /* Hides sidebar and aside when on mobile */
 #navSidebar, #asideSidebar{
     display:none;
