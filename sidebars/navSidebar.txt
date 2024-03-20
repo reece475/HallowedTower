@@ -8,6 +8,7 @@
                 <li><a href="honeyTrees">Shiny Hunting Honey Trees</a></li>
                 <li><a href="cartridges">Detecting Counterfeit Cartridges</a></li>
                 <li><a href="spiritomb">Catching Spiritomb</a></li>
+                <li><a href="magikarp">Resort Area Magikarp</a></li>
             </ul>
 
             <h1>Resources</h1>
