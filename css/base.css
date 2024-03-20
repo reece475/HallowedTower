@@ -117,6 +117,7 @@ header{
     font-size: 23px;
     border-bottom: 2px solid var(--submain); /*Line on bottom of header*/
     height: auto;
+    background-image: url('../images/DPBackground.png');
 }
 
 /* Code for the article area */
@@ -182,19 +183,16 @@ then on hover simply changes the color to black */
     display: inline-block;
 }
 
- 
 .affiliateSection > a > img{
     border: 2px dashed var(--highlights);
 
 }
-
 
 .affiliateSection > a > img:hover{
     border-style: dashed;
     border-width: 2px;
     border-color: var(--black);
 }
-
 
 /* Creates red groups on sidebar */
 .sidebarList{
