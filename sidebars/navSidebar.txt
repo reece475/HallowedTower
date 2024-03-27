@@ -9,6 +9,7 @@
                 <li><a href="cartridges">Detecting Counterfeit Cartridges</a></li>
                 <li><a href="spiritomb">Catching Spiritomb</a></li>
                 <li><a href="magikarp">Resort Area Magikarp</a></li>
+                <li><a href="dnsExploit">The DNS Exploit (Mystery Gifts)</a></li>
             </ul>
 
             <h1>Resources</h1>
