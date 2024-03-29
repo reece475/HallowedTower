@@ -352,6 +352,15 @@ nav, aside {
     margin: 0;
 }
 
+/* Adds a larger tab next to the descriptions */
+.descList > dd{
+    margin-left: 7%;
+}
+
+.instructions > li{
+    margin: 10px;
+}
+
 
 
 
