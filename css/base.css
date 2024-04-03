@@ -336,6 +336,14 @@ button{
     margin: 15px;
 }
 
+select{
+    background-color: var(--submain);  
+    font-family: gen4Pokemon;
+    color: var(--black);
+    padding: 5px 10px;
+    margin: 15px;
+}
+
 input{
     background-color: var(--submain);
 }
