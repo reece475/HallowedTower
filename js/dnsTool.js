@@ -86,7 +86,7 @@ const platEvents = [
     "Member Card",
     "Arceus",
     "Stopwatch (Unofficial)",
-    "Alarm Clock (Unofficial)_",
+    "Alarm Clock (Unofficial)",
     "Azure Flute (Unofficial)",
     "Lucario Doll",
     "Oak's Letter",
@@ -219,11 +219,11 @@ that result on the webpage
 function getDate(){
     var date = document.getElementById("eventSelection").selectedIndex;
     if (document.getElementById("gameSelection").value === "dpGame"){
-        document.getElementById("result").innerHTML = "For this event change your date to: " + dpDates[date];        
+        document.getElementById("result").innerHTML = "For this event change your date to: <u>" + dpDates[date] + "</u>";        
     }else if(document.getElementById("gameSelection").value === "platGame"){
-        document.getElementById("result").innerHTML = "For this event change your date to: " + platDates[date];        
+        document.getElementById("result").innerHTML = "For this event change your date to: <u>" + platDates[date] + "</u>";        
     }else if (document.getElementById("gameSelection").value === "hgssGame"){
-        document.getElementById("result").innerHTML = "For this event change your date to: " + hgssDates[date];        
+        document.getElementById("result").innerHTML = "For this event change your date to: <u>" + hgssDates[date] + "</u>";        
     } 
 }
 
