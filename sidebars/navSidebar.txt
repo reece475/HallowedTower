@@ -17,5 +17,5 @@
             <ul class="sidebarList">
                 <li><a href="honeyTrees#chapter2honey">Honey Tree TID + SID Checker</a></li>
                 <li><a href="shinyChance">Shiny Chance Tool</a></li>
-                <li><a href="dnsExploit#dnsDropdowns">Mystery Gift Date Calculator</a></li>
+                <li><a href="dnsExploit#dateTool">Mystery Gift Date Calculator</a></li>
             </ul>
