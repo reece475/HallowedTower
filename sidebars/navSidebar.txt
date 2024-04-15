@@ -11,6 +11,7 @@
                 <li><a href="magikarp">Resort Area Magikarp</a></li>
                 <li><a href="dnsExploit">The DNS Exploit (Mystery Gifts)</a></li>
                 <li><a href="rareCandy">Farming Rare Candy</a></li>
+                <li><a href="forgottenAreas">Forgotten Areas in Gen 4</a></li>
             </ul>
 
             <h1>Resources</h1>

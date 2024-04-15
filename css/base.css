@@ -263,6 +263,9 @@ figcaption{
     font-size: 15px;
 }
 
+.imageCenter{
+    text-align: center;
+}
 /*--------------------------------HEADING STYLES--------------------------------*/
 /* Tier 1 Heading Styles */
 h1{
