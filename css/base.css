@@ -155,8 +155,9 @@ nav{
     font-family: gen4Pokemon;
     color: var(--white);
     word-wrap: break-word;
-    font-size: 23px;
+    font-size: 18px;
 }
+
 
 /* CSS for Socials/Affiliates */
 aside{
