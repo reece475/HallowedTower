@@ -11,12 +11,15 @@
                 <li><a href="../guides/magikarp">Resort Area Magikarp</a></li>
                 <li><a href="../guides/dnsExploit">The DNS Exploit (Mystery Gifts)</a></li>
                 <li><a href="../guides/rareCandy">Farming Rare Candy</a></li>
-                <li><a href="../fun/forgottenAreas">Forgotten Areas in Gen 4</a></li>
             </ul>
-
             <h1>Resources</h1>
             <ul class="sidebarList">
                 <li><a href="../guides/honeyTrees#chapter2honey">Honey Tree TID + SID Checker</a></li>
                 <li><a href="../resources/shinyChance">Shiny Chance Tool</a></li>
                 <li><a href="../guides/dnsExploit#dateTool">Mystery Gift Date Calculator</a></li>
             </ul>
+            <h1>Fun</h1>
+            <ul class="sidebarList">
+                <li><a href="../fun/forgottenAreas">Forgotten Areas in Gen 4</a></li>
+            </ul>
+            
