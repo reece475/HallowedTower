@@ -158,6 +158,10 @@ nav{
     font-size: 18px;
 }
 
+nav h1{
+    font-size: 35px;
+}
+
 
 /* CSS for Socials/Affiliates */
 aside{
@@ -168,6 +172,10 @@ aside{
     color: var(--white);
     word-wrap: break-word;
     font-size: 23px;
+}
+
+aside h1{
+    font-size: 35px;
 }
 
 .affiliateSection{
@@ -200,10 +208,10 @@ then on hover simply changes the color to black */
 /* Creates red groups on sidebar */
 .sidebarList{
     background-color: var(--highlights);
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     border-radius: 10%;
     list-style-type: none;
     padding-inline-start: 0px;
