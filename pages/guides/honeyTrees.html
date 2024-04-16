@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/base.css"/>
+    <link rel="stylesheet" href="../../css/honeyTree.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../js/load.js"></script>
+    <script src="../../js/base.js"></script>
+    <script src="../../js/honeyTrees.js"></script>
+    <title>Honey Trees</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <meta name="description" content="A Guide to Sinnoh Honey Trees">
+    <meta name="keywords" content="Pokemon, honey tree, munchlax, munchlax trees, sinnoh, platinum">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p id="bannerText"> A Guide to Sinnoh</p>
+            <a href="../../">
+                <img id="logo" src="../../images/NewBanner.png" style="max-width: 100%; height: auto;">
+            </a>
+        </header>
+
+        <div id="mobileButton">
+            <br>
+            <button class="floatCenter" onclick="hideMenu()">Menu</button>
+            <br><br><br>
+        </div>
+
+        <nav id="navSidebar">
+        </nav>
+
+        <main>
+            <h1  id="honeyTop"> Honey Trees </h1>
+            <div class="chapters">
+                <ol>
+                    <li><a href="#chapter1honey">Overview</a></li>
+                    <li><a href="#chapter2honey">TID + SID Tree Checker</a></li>
+                    <li><a href="#chapter3honey">How to Shiny Hunt Trees</a></li>
+                    <li><a href="#chapter4honey">Tree Locations</a></li>
+                    <li><a href="#chapter5honey">Encounter Tables</a></li>
+                </ol>
+            </div>
+            <h2 id="chapter1honey">Overview</h2>
+            <p>Honey Trees were a new type of tree added to Pokemon Diamond, Pearl,
+                and Platinum. They allowed you to slather honey on the bark, which
+                could be bought one at a time (Diamond Pearl) or in groups of 10
+                (Platinum) in Floaroma Meadow. Once slathered, after <u>6 in-game hours</u> (switching the time on your DS does not work) it will shake, and give you an encounter. If you do not encounter this Pokemon within <u>24 hours</u> the pokemon will be gone and you must re-slather the bark and wait another 6 hours. Based on an algorithm involving your TID and SID, 4 of the 20 trees will be "Munchlax Trees", which have a rarer encounter table and a 1% chance to encounter Munchlax. 
+            </p>
+            
+            <br>
+
+            <h2 id="chapter2honey">TID + SID Tree Checker</h2>
+
+            <!-- Code for the radio buttons to toggle hiding-->
+            <input type="radio" name="sidToggle" id="TID_SID_Toggle" checked="checked"  onclick="hideTID()">
+
+            <label for="sidToggle" >TID + SID</label>
+
+            <input type="radio" name="sidToggle" id="TID_Toggle" onclick="hideSID()">
+            
+            <label for="sidToggle" >TID Only</label>
+
+            <!--Code for the TID + SID Input-->
+            <span id="TID_SID_Input">
+                <p> Enter your TID </p>
+                <input type="text" id="TID"/> 
+                <p>Enter your SID</p> 
+                <input type="text" id="SID"/> 
+                <button type="submit" onclick="calculate()">Calculate</button>
+            </span>
+
+            <!-- Code for only TID Input-->
+            <span id="TID_Input" hidden>
+                <p>Enter your TID</p>
+                <input id="TIDOnly"/>
+                <button type="button" onclick="calculateTID()">Calculate</button>
+            </span>  
+
+            <!-- Where the output will be sent-->
+            <p id="here"></p>
+
+            <h2 id="chapter3honey">How to Shiny Hunt Trees</h2>
+            <p>When shiny hunting a honey encounter, it is important to note that the Pokemon that will appear is determined when the honey is slathered. This means soft resetting in front of the shaking tree will change the gender, and stats (and therefore can be shiny) but the Pokemon species will always be the same. There is actually a clever workaround when it comes to circumventing the 24 hour time limit on the honey trees. The only thing you'll need is: <u>1 cartridge and 2 DS consoles.</u>
+            </p>
+            <br>
+            <div class="highlightSection">
+            <ol>
+                <li>Check the shaking tree to ensure the Pokemon is the one you want, then soft reset.</li>
+                <li>Save in front of the shaking tree</li>
+                <li>Move the cartridge from one console to another.</li>
+                <li>You <b>CANNOT</b> save on this new console, or move the cartridge to another console, or it will reset the timer. From here you can soft reset until you get the shiny. The only downside to this, is after a day, you will be stuck looking at the journal screen every SR until you find the shiny, as you can't save to get rid of it.</li>
+            </ol></div> <br>
+
+            <h2 id="chapter4honey">Honey Tree Locations</h2>
+            <br>
+            <button class="floatCenter" onclick="hideLocations()">Show/Hide</button>
+            <br>
+            <p id="locationsList">
+                <dl id="honeyTreeLocations" style="display: none;">
+                    <li><u>Route 205 South</u></li>
+                    <dd>Start from Floaroma Town. Head East until you hit the bridge just before the Valley Windworks. Go North up the bridge and the tree will be on your left.</dd>
+                    <li><u>Route 205 North</u></li>
+                    <dd>Start from Eterna City. Leave to the West, and it will be immediately outside the city, a little North of the grass patches before the bridge. </dd>
+                    <li><u>Route 206</u></li>
+                    <dd> <u>Needs Cut.</u> Start from Oreburgh City. Head North, and you'll pass by the Route 207 tree. Instead of going onto Cycling Road, use <u>Cut</u> and head North. The tree will be about halfway down the route.</dd>
+                    <li><u>Route 207</u></li>
+                    <dd>Start from Oreburgh City. Head North, using your bike to get up the mudslide, and the tree will be on your right.</dd>
+                    <li><u>Route 208</u></li>
+                    <dd>Start from Hearthome City. Exit the city to the West, and the tree will be near the bottom of the screen, in the grass, by the guy who gives you the Odd Keystone.</dd>
+                    <li><u>Route 209</u></li>
+                    <dd>Start from Solaceon Town. Head South, down the mudslide. Hang a left at the Hallowed Tower, and the tree will be slightly North of the first bridge.</dd>
+                    <li><u>Route 210 South</u></li>
+                    <dd>Start from Solaceon Town. Head North, over the mudslide, and once the tall grass clears hang a right, the tree should be just below you.</dd>
+                    <li><u>Route 210 North</u></li>
+                    <dd>Start from Celestic Town. Exit to the East, and follow the path as far right as you can, until you hit the two trainers running in circles. Head down the stairs, and all the way to the right. The tree is slightly above the Black Belt trainer. </dd>
+                    <li><u>Route 211</u></li>
+                    <dd>Start from Celestic Town. Exit to the West, and the honey tree will be in the patch of grass immediately outside the town.</dd>
+                    <li><u>Route 212 North</u></li>
+                    <dd>Start from Hearthome City. Exit to the South, and take the very first left you can, the honey tree is in a small alcove.</dd>
+                    <li><u>Route 212 South</u></li>
+                    <dd>Start from Pastoria City. Exit to the West, head down at the puddles, and instead of cutting the trees, keep heading left to the large patch of grass. Head all the way up at the grass patch, until you hit the trees, then go left. The honey tree will be just past the first patch of mud.</dd>
+                    <li><u>Route 213</u></li>
+                    <dd><u>Needs Rock Smash.</u> Start from Pastoria City. Exit to the East, head right and follow the path to the sand. Behind the small house, head left where you'll need to use <u>Rock Smash.</u> The honey tree is in this alcove.</dd>
+                    <li><u>Route 214</u></li>
+                    <dd>Start from Veilstone City. Exit to the South, and follow the left side of the path (the rocky side) all the way down to the large patch of grass contained within the white fence area, just before Valor Lakefront. The honey tree is in this white fenced area.</dd>
+                    <li><u>Route 215</u></li>
+                    <dd>Start from Solaceon Town. Head North until you hit the Cafe Cabin, and hang a right to get onto Route 215. Go up the stairs, across the bridge, down the stairs, and the honey tree will be just above you.</dd>
+                    <li><u>Route 218</u></li>
+                    <dd>Start from Canalave City. Exit to the East, and the honey tree will be just outside the city, by the large patch of grass and berry soil.</dd>
+                    <li><u>Route 221</u></li>
+                    <dd>If you can already fly to it, start from Pal Park. Follow the path directly to the left (not down where the ace trainer is) and the honey tree should be along the path.<br>
+                        If you can't, you'll have to start from Sandgem Town. Surf south, through 219, through 220, and hang a right to get to 221. Eventually you'll hit land with a fisherman on it. There are two paths, split by some trees. Take the upper one, and head straight right, you'll eventually come across the honey tree. </dd>
+                    <li><u>Route 222</u></li>
+                    <dd>Start from Sunyshore City. Exit to the West, and immediately head North, the tree is directly above.</dd>
+                    <li><u>Valley Windworks</u></li>
+                    <dd>Start from Floaroma Town. Exit to the East, and head all the way right to the Valley Windworks. The honey tree is just outside the front door.</dd>
+                    <li><u>Eterna Forest</u></li>
+                    <dd><U>Needs Cut.</U> Start from Eterna City. Exit to the West, across the bridge, and keep heading left instead of upwards and into the Forest. <u>Cut</u> the trees, and head South and down the stairs to where the path branches. Take the bottom path all the way to the left, and the tree will be at the end.</dd>
+                    <li><u>Fuego Ironworks</u></li>
+                    <dd><u>Needs Surf.</u> Start from Floaroma Town. Exit to the East, and from the little bridge, <u>Surf</u> off the left side. Follow this path all the way up behind Floaroma Town, and the honey tree will be in a patch of grass just outside of Fuego Ironworks.</dd>
+                    <li><u>Floaroma Meadow</u></li>
+                    <dd>Start from Floaroma Town. Head up and to the left of the Pokemon center into the Floaroma Meadow. Go up the stairs and follow the path to the right, where the tree will be right beside the house.</dd>
+                </dl>
+            </p> <br>
+
+            <h2 id="chapter5honey">Encounter Table</h2>
+            <p>Any time you slather honey on a tree, there is a 10% chance you won't get any Pokemon. You can immediately check this by slathering honey, then pressing A. If the text says "The bark is slathered with honey" you're set.
+                If it instead still says "There's a sweet scent in the air", you'll have to slather honey again until you get the message confirming the bark is slathered with honey.
+            </p><br>
+            <!--Used Tabelizer-->
+            <table class="honeyTable">
+            <thead>
+                <tr class="honeyFirstRow">
+                    <th colspan="3">D/P</th>
+                    <th colspan="2">Pt.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="honeyBold">
+                    <td>Pokemon</td>
+                    <td>Regular Tree</td>
+                    <td>Munchlax Tree</td>
+                    <td>Regular Tree</td>
+                    <td>Munchlax Tree</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">Aipom</td>
+                    <td>5.50%</td>
+                    <td >8.00%</td>
+                    <td>10.00%</td>
+                    <td>12.50%</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">Heracross</td>
+                    <td>1.00%</td>
+                    <td>3.50%</td>
+                    <td>1.00%</td>
+                    <td>3.50%</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">Wurmple</td>
+                    <td>29.00%</td>
+                    <td>11.50%</td>
+                    <td>14.00%</td>
+                    <td>4.00%</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">Silcoon/Cascoon</td>
+                    <td>14.00%</td>
+                    <td>4.00%</td>
+                    <td>0.00%</td>
+                    <td>0.00%</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">Burmy</td>
+                    <td>11.00%</td>
+                    <td>16.00%</td>
+                    <td>22.00%</td>
+                    <td>32.00%</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">Combee</td>
+                    <td>22.00%</td>
+                    <td>32.00%</td>
+                    <td>32.00%</td>
+                    <td>22.00%</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">Cherubi</td>
+                    <td>7.50%</td>
+                    <td>15.00%</td>
+                    <td>11.00%</td>
+                    <td>16.00%</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">Munchlax</td>
+                    <td>0.00%</td>
+                    <td>1.00%</td>
+                    <td>0.00%</td>
+                    <td>1.00%</td>
+                </tr>
+                <tr>
+                    <td style="background-color:var(--highlights);">No Pokemon</td>
+                    <td>10.00%</td>
+                    <td>9.00%</td>
+                    <td>10.00%</td>
+                    <td>9.00%</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="sources">
+            <h3 style="text-align: center;"> Sources </h3>
+            <p>1. <a href="https://bulbapedia.bulbagarden.net">Bulbapedia</a></p>
+            <p>2. <a href="https://youtu.be/V40vnPCY0MQ">AbsolBlogsPokemon</a></p>
+        </div> <br>
+        <button type="button" class="floatCenter" onclick="backToTop()">Back to Top</button><br>
+
+        <div class="floatRight" >
+            <p class="lastUpdated">Last updated 03/14/2024</p>
+        </div>
+
+        </main>
+
+        <aside id="asideSidebar">
+        </aside>
+
+        <footer id="footerInfo">
+        </footer>
+    </div>
+</body>
+
+</html>
+
