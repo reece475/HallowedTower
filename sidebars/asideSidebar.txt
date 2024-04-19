@@ -17,4 +17,7 @@
                 <a href="https://www.dragonflycave.com/" target="_blank">
                     <img src="../../images/affiliates/palkiabutton.gif" style="max-width: 88px; height: auto;">
                 </a>
+                <a href="https://noseclub.bluwiikoon.art/index.shtml" target="_blank">
+                    <img src="../../images/affiliates/noseclub.png" style="max-width: 88px; height: auto;">
+                </a>
             </div>
