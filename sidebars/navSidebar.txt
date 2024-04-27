@@ -11,6 +11,7 @@
                 <li><a href="../guides/magikarp">Resort Area Magikarp</a></li>
                 <li><a href="../guides/dnsExploit">The DNS Exploit (Mystery Gifts)</a></li>
                 <li><a href="../guides/rareCandy">Farming Rare Candy</a></li>
+                <li><a href="../guides/radar">Pokeradar Guide</a></li>
             </ul>
             <h1>Resources</h1>
             <ul class="sidebarList">

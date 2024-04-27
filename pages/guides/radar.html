@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z43JE0B4KH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z43JE0B4KH');
+    </script>
+    <!----------------------------->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/base.css"/>
+    <link rel="stylesheet" href="../../css/radar.css">
+    <script src="../../js/base.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../js/load.js"></script>
+    <script src="../../js/pokeradar.js"></script>
+    <meta name="description" content="A Guide to Pokeradar in Gen 4">
+    <meta name="keywords" content="Pokemon, sinnoh, radar, pokeradar, chain, chaining, easy shiny, shinies">
+    <title>Pokeradar Guide</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <header>
+            <p id="bannerText"> A Guide to Sinnoh</p>
+            <a href="../../">
+                <img id="logo" src="../../images/NewBanner.png" style="max-width: 100%; height: auto;">
+            </a> 
+        </header>
+
+        <div id="mobileButton">
+            <br>
+            <button class="floatCenter" onclick="hideMenu()">Menu</button>
+            <br><br><br>
+        </div>
+
+        <nav id="navSidebar">
+
+        </nav>
+
+        <main>
+            <h1>Pokeradar</h1>
+
+            <div class="chapters">
+                <ol>
+                    <li><a href="#chapter1radar">Overview</a></li>
+                    <li><a href="#chapter2radar">How the Pokeradar Works</a></li>
+                    <li><a href="#chapter3radar">How to Chain</a></li>
+                    <li><a href="#chapter4radar">What Breaks Your Chain</a></li>
+                    <li><a href="#chapter5radar">The Math</a></li>
+                    <li><a href="#chapter6radar">Encounter Tables</a></li>
+                </ol>
+            </div>
+
+
+            <h2 id="chapter1radar">Overview</h2>
+            <p>
+                The Pokeradar was introduced in Diamond Pearl and Platinum as a post-game item, which 
+                allows the player to find rare National Dex Pokemon, alongside being a method to find shiny
+                Pokemon at increased odds. It can only be used on foot, in a patch of grass. When used, it 
+                will cause up to 4 patches of grass to shake, where players can encounter a Pokemon.
+                It involves a method called chaining, where a player will continue to catch or KO the same 
+                Pokemon over and over, with each Pokemon increasing the odds of finding a shiny patch in 
+                the next use of the radar. There are a lot of rules when it comes to chaining Pokemon, so 
+                we'll go over them in detail here.<br><br>
+
+                To get the Pokeradar, the player must see every Pokemon in the Sinnoh Dex, and head to 
+                Rowan's lab in Sandgem town. Talking to Rowan, you'll get both the National Dex and the
+                Pokeradar automatically.
+            </p><br>
+
+            <h2>Chain Probability Calculator</h2>
+            <div class="important" id="radarTool">
+            <p>
+                    Enter a number between 1 and 40: 
+                
+                <input type="number" min="1" max="40" id="chainNum" placeholder="1">
+        
+                <button onclick="chain()">Calculate</button>
+            </p>
+                <p id="results">
+        
+                </p>
+            </div>
+
+            <h2 id="chapter2radar">How The Pokeradar Works</h2>
+            <p>
+                When the player uses the Pokeradar, up to 4 grass patches will shake. There are <u>3 different types</u> of shaking grass:
+            </p><br>
+
+            <div class="highlightSection">
+                <p>
+                    -Shakes Vigorously for a Short Time<br>
+                    -Contains the rare radar Pokemon for the route<br>
+                    <img src="../../images/radar/Shaking Grass Rare.png"><br>
+                    -Shakes Gently for a Longer Time<br>
+                    -Will only contain Pokemon native to the route<br>
+                    <img src="../../images/radar/Shaking Grass.png"><br>
+                    -Shakes with Shiny Sparkles<br>
+                    -Guarantees a shiny Pokemon<br>
+                    -Will always continue your chain<br>
+                    <img src="../../images/radar/Shiny Grass.png">
+                </p>
+            </div>
+
+            <p>
+                Once you choose one type of grass, you will need to continue chaining <u>the same type of grass</u>.<br><br>
+
+                The 4 shaking patches will appear within 4 separate rings around the player, shown here.
+            </p><br>
+
+            <div style="text-align: center;">
+                <img src="../../images/radar/Pokeradar Rings.png" width="450px" height="auto">
+            </div><br>
+
+            <p>
+                Which patch you enter will directly affect the chance of your chain continuing, as will your choice of either <u>Catching</u> or <u>KO-ing</u> the Pokemon. Running will break your chain.
+            </p><br>
+
+            <p class="important">
+                Red = 28% chance to get same species<br>
+                Orange = 48% chance to get same species<br>
+                Yellow = 68% chance to get same species<br>
+                Green = 88% chance to get same species<br><br>
+                Catch Pokemon - 10% flat boost for next encounter
+            </p>
+
+            <p>
+                This means you have a 98% chance of continuing your chain every encounter as long as you always <b>catch</b> the Pokemon in the outer ring. If you were to hit this 98% chance for every encounter, you would theoretically hit a chain of 40 approximately 44% of the time. It's also worth mentioning that resetting the radar will get rid of your 10% catch boost, which will also affect your odds of getting to a chain of 40.<br>
+                <br>
+                It is important you use a large patch of grass when chaining, as every time you use the radar the game will randomly assign grass patches within the 4 rings. If all 4 positions it chooses do not have available grass, the chain will simply break. 
+            </p><br>
+
+            <h2 id="chapter3radar">How to Chain</h2>
+            <p>
+                Before you start your chain, there are a few things you should do to prepare.
+            </p>
+
+                <ul class="highlightSection" style="padding-left: 5%; list-style-image: url(../../images/favicon.ico);">
+                    <li>Stock up on Max/Super Repels</li>
+                    <li>Stock up on Pokeballs (Quick Balls are great for this)</li>
+                    <li>Save before you begin chaining, you so you can reset and get your balls and repels back</li>
+                    <li>Grab the chaining Poketch App</li>
+                </ul>
+
+            <p>
+                The Poketch Chaining app can be found at Pal Park, and will be given to you by Professor Oak. The app will keep track of your top 3 longest chains, as well as your current chain. If you watch your bottom screen as you enter a patch of grass, you can see if your chain will end early, as your current chain will disappear from the Poketch.
+            </p>
+
+            <ol class="important" style="padding-left: 5%;">
+                <li>Choose a target.</li>
+                <li>Use a repel, and enter the middle of the grass.</li>
+                <li>Save your game so you can reset if your chain breaks.</li>
+                <li>Use the radar. Four patches should shake. If you are going for a rare encounter on the route, be sure to go to the vigorous shaking grass shown above. Whatever patch you choose, you will need to continue chaining the same kind.</li>
+                <li>Once in the encounter, catch or KO the Pokemon. Catching it will give you better odds of continuing your chain.</li>
+                <li>Once out of the battle, your radar will go off again. Be sure to aim for a patch 4 tiles away, and make sure it is the same kind of grass that you entered initially.</li>
+                <li>If you have no good patches, you can run 50 steps to recharge the radar and use it again in order to generate 4 more. However, this will get rid of your 10% catch boost.</li>
+                <li>Continue until you get to a chain of 40, where shiny odds max out.</li>
+                <li>Once at 40, you will simply run back and forth, avoiding any encounters or patches, and continue resetting the radar until you find a shiny patch.</li>
+                <li>Once you find your shiny, you can catch it and continue chaining, or catch it and be done!</li>
+            </ol><br>
+
+            <h2 id="chapter4radar">What Breaks Your Chain</h2>
+            <p>
+                Here are things to watch out for when chaining.
+            </p>
+            <ul class="highlightSection" style="padding-left: 5%; list-style-image: url(../../images/favicon.ico);">
+                <li>Encountering a different species of Pokemon</li>
+                <li>Encountering a Pokemon outside of the radar</li>
+                <li>No available patches of grass shake</li>
+                <li>If all patches of shaking grass leave the screen</li>
+                <li>Getting on your bike</li>
+                <li>A Pokemon Evolves</li>
+                <li>An Egg hatches</li>
+                <li>Entering the wrong kind of grass (Even if it is the same Pokemon as you're chaining, the chain breaks)</li>
+            </ul>
+
+            <h2 id="chapter5radar">The Math</h2>
+            <p>
+                The probability formula for generating a shiny patch is:
+            </p><br>
+            <p class="important" style="text-align: center;">
+                [65535 / (8200 - ChainLength * 200) / 65536]
+            </p><br>
+
+            <p>
+                This caps at a chain of 40, with the chance of encountering a shiny patch being 0.5% per patch, or about 2% per use of the Pokeradar (assuming all 4 patches appear).
+            </p><br>
+
+
+            <h2 id="chapter6radar" >Encounter Tables</h2>
+
+            <table id="diamondTable">
+                <caption>* = Exclusive to Diamond and Platinum <br>
+                         ** = Exclusive to Diamond
+                </caption>
+                
+                <thead>
+                    <tr>
+                        <th colspan="2">Diamond</th>
+                    </tr>
+                </thead>
+
+            <tbody>
+                <tr>
+                    <th>Pokemon</th>
+                    <th>Location</th>
+                </tr>
+
+                <tr>
+                    <td>Nidoran</td>
+                    <td>Route 201</td>
+                </tr>
+                
+                <tr>
+                    <td>Nidorina</td>
+                    <td>Valor Lakefront, Route 221</td>
+                </tr>
+                
+                <tr>
+                    <td>Nidorino</td>
+                    <td>Valor Lakefront, Route 221</td>
+                </tr>
+                
+                <tr>
+                    <td>Venonat</td>
+                    <td>Route 229</td>
+                </tr>
+                
+                <tr>
+                    <td>Venomoth</td>
+                    <td>Route 229</td>
+                </tr>
+                
+                <tr>
+                    <td>Mankey</td>
+                    <td>Route 225, Route 226</td>
+                </tr>
+                
+                <tr>
+                    <td>Primeape</td>
+                    <td>Route 225, Route 226</td>
+                </tr>
+                
+                <tr>
+                    <td>Grimer</td>
+                    <td>Route 212 South</td>
+                </tr>
+                
+                <tr>
+                    <td>Tauros</td>
+                    <td>Route 209</td>
+                </tr>
+                
+                <tr>
+                    <td>Sentret</td>
+                    <td>Route 202</td>
+                </tr>
+                
+                <tr>
+                    <td>Togepi</td>
+                    <td>Route 230</td>
+                </tr>
+                
+                <tr>
+                    <td>Mareep</td>
+                    <td>Valley Windworks</td>
+                </tr>
+                
+                <tr>
+                    <td>Flaaffy</td>
+                    <td>Route 222</td>
+                </tr>
+                
+                <tr>
+                    <td>Hoppip</td>
+                    <td>Route 205 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Sunkern</td>
+                    <td>Route 204 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Wobbuffet</td>
+                    <td>Lake Valor, Lake Verity Lake Acuity</td>
+                </tr>
+                
+                <tr>
+                    <td>Smeargle</td>
+                    <td>Route 212 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Tyrogue</td>
+                    <td>Route 208, Route 211 West</td>
+                </tr>
+                
+                <tr>
+                    <td>Miltank</td>
+                    <td>Route 209</td>
+                </tr>
+                
+                <tr>
+                    <td>Swellow</td>
+                    <td>Route 213</td>
+                </tr>
+                
+                <tr>
+                    <td>Kirlia</td>
+                    <td>Route 203, Route 204</td>
+                </tr>
+                
+                <tr>
+                    <td>Nincada</td>
+                    <td>Eterna Forest</td>
+                </tr>
+                
+                <tr>
+                    <td>Loudred</td>
+                    <td>Mt. Coronet</td>
+                </tr>
+                
+                <tr>
+                    <td>Torkoal</td>
+                    <td>Route 227, Stark Mountain</td>
+                </tr>
+                
+                <tr>
+                    <td>Baltoy</td>
+                    <td>Route 206</td>
+                </tr>
+                
+                <tr>
+                    <td>Aron*</td>
+                    <td>Fuego Ironworks</td>
+                </tr>
+                
+                <tr>
+                    <td>Ditto</td>
+                    <td>Route 218</td>
+                </tr>
+                
+                <tr>
+                    <td>Skiploom</td>
+                    <td>Route 205 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Ralts</td>
+                    <td>Route 203, Route 204</td>
+                </tr>
+                
+                <tr>
+                    <td>Trapinch</td>
+                    <td>Route 228</td>
+                </tr>
+                
+                <tr>
+                    <td>Vibrava</td>
+                    <td>Route 228</td>
+                </tr>
+                
+                <tr>
+                    <td>Swablu</td>
+                    <td>Route 211 East</td>
+                </tr>
+                
+                <tr>
+                    <td>Duskull</td>
+                    <td>Route 224</td>
+                </tr>
+                
+                <tr>
+                    <td>Dusclops</td>
+                    <td>Route 224</td>
+                </tr>
+                
+                <tr>
+                    <td>Snorunt</td>
+                    <td>Route 216, Route 217, Acuity Lakefront</td>
+                </tr>
+                
+                <tr>
+                    <td>Larvitar**</td>
+                    <td>Route 207</td>
+                </tr>
+                
+                <tr>
+                    <td>Mightyena**</td>
+                    <td>Route 214, Route 215</td>
+                </tr>
+                
+                <tr>
+                    <td>Kecleon**</td>
+                    <td>Route 210 North</td>
+                </tr>
+            </tbody>
+            </table>
+        <br>
+
+
+            <table id="pearlTable">
+                <caption>* = Exclusive to Pearl and Platinum <br>
+                         ** = Exclusive to Pearl
+                </caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Pearl</th>
+                    </tr>
+                </thead>
+
+            <tbody>
+                <tr>
+                    <th>Pokemon</th>
+                    <th>Location</th>
+                </tr>
+
+                <tr>
+                    <td>Nidoran</td>
+                    <td>Route 201</td>
+                </tr>
+                
+                <tr>
+                    <td>Nidorina</td>
+                    <td>Valor Lakefront, Route 221</td>
+                </tr>
+                
+                <tr>
+                    <td>Nidorino</td>
+                    <td>Valor Lakefront, Route 221</td>
+                </tr>
+                
+                <tr>
+                    <td>Venonat</td>
+                    <td>Route 229</td>
+                </tr>
+                
+                <tr>
+                    <td>Venomoth</td>
+                    <td>Route 229</td>
+                </tr>
+                
+                <tr>
+                    <td>Mankey</td>
+                    <td>Route 225, Route 226</td>
+                </tr>
+                
+                <tr>
+                    <td>Primeape</td>
+                    <td>Route 225, Route 226</td>
+                </tr>
+                
+                <tr>
+                    <td>Grimer</td>
+                    <td>Route 212 South</td>
+                </tr>
+                
+                <tr>
+                    <td>Tauros</td>
+                    <td>Route 209</td>
+                </tr>
+                
+                <tr>
+                    <td>Sentret</td>
+                    <td>Route 202</td>
+                </tr>
+                
+                <tr>
+                    <td>Togepi</td>
+                    <td>Route 230</td>
+                </tr>
+                
+                <tr>
+                    <td>Mareep</td>
+                    <td>Valley Windworks</td>
+                </tr>
+                
+                <tr>
+                    <td>Flaaffy</td>
+                    <td>Route 222</td>
+                </tr>
+                
+                <tr>
+                    <td>Hoppip</td>
+                    <td>Fuego Ironworks</td>
+                </tr>
+                
+                <tr>
+                    <td>Sunkern</td>
+                    <td>Route 204 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Wobbuffet</td>
+                    <td>Lake Valor, Lake Verity, Lake Acuity</td>
+                </tr>
+                
+                <tr>
+                    <td>Smeargle</td>
+                    <td>Route 212 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Tyrogue</td>
+                    <td>Route 208, Route 211 West</td>
+                </tr>
+                
+                <tr>
+                    <td>Miltank</td>
+                    <td>Route 209</td>
+                </tr>
+                
+                <tr>
+                    <td>Swellow</td>
+                    <td>Route 213</td>
+                </tr>
+                
+                <tr>
+                    <td>Kirlia</td>
+                    <td>Route 203, Route 204</td>
+                </tr>
+                
+                <tr>
+                    <td>Nincada</td>
+                    <td>Eterna Forest</td>
+                </tr>
+                
+                <tr>
+                    <td>Loudred</td>
+                    <td>Mt. Coronet</td>
+                </tr>
+                
+                <tr>
+                    <td>Torkoal</td>
+                    <td>Route 227, Stark Mountain</td>
+                </tr>
+                
+                <tr>
+                    <td>Baltoy</td>
+                    <td>Route 206</td>
+                </tr>
+                
+                <tr>
+                    <td>Slowpoke*</td>
+                    <td>Route 205 North</td>
+                </tr>
+
+                <tr>
+                    <td>Stantler*</td>
+                    <td>Route 207</td>
+                </tr>
+
+                <tr>
+                    <td>Bagon*</td>
+                    <td>Route 210 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Ditto</td>
+                    <td>Route 218</td>
+                </tr>
+                
+                <tr>
+                    <td>Skiploom</td>
+                    <td>Fuego Ironworks</td>
+                </tr>
+                
+                <tr>
+                    <td>Ralts</td>
+                    <td>Route 203, Route 204</td>
+                </tr>
+                
+                <tr>
+                    <td>Trapinch</td>
+                    <td>Route 228</td>
+                </tr>
+                
+                <tr>
+                    <td>Vibrava</td>
+                    <td>Route 228</td>
+                </tr>
+                
+                <tr>
+                    <td>Swablu</td>
+                    <td>Route 211 East</td>
+                </tr>
+                
+                <tr>
+                    <td>Duskull</td>
+                    <td>Route 224</td>
+                </tr>
+                
+                <tr>
+                    <td>Dusclops</td>
+                    <td>Route 224</td>
+                </tr>
+                
+                <tr>
+                    <td>Snorunt</td>
+                    <td>Route 216, Route 217, Acuity Lakefront</td>
+                </tr>
+                
+                <tr>
+                    <td>Houndoom**</td>
+                    <td>Route 214, Route 215</td>
+                </tr>
+            </tbody>
+            </table>
+        <br>
+            
+        
+            <table id="platTable">
+                <caption>** = Exclusive to Platinum <br>
+                </caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Platinum</th>
+                    </tr>
+                </thead>
+
+            <tbody>
+                <tr>
+                    <th>Pokemon</th>
+                    <th>Location</th>
+                </tr>
+
+                <tr>
+                    <td>Nidoran</td>
+                    <td>Route 201</td>
+                </tr>
+                
+                <tr>
+                    <td>Nidorina</td>
+                    <td>Valor Lakefront, Route 221</td>
+                </tr>
+                
+                <tr>
+                    <td>Nidorino</td>
+                    <td>Valor Lakefront, Route 221</td>
+                </tr>
+                
+                <tr>
+                    <td>Venonat</td>
+                    <td>Route 229</td>
+                </tr>
+                
+                <tr>
+                    <td>Venomoth</td>
+                    <td>Route 229</td>
+                </tr>
+                
+                <tr>
+                    <td>Mankey</td>
+                    <td>Route 225, Route 226</td>
+                </tr>
+                
+                <tr>
+                    <td>Primeape</td>
+                    <td>Route 225, Route 226</td>
+                </tr>
+                
+                <tr>
+                    <td>Grimer</td>
+                    <td>Route 212 South</td>
+                </tr>
+                
+                <tr>
+                    <td>Tauros</td>
+                    <td>Route 210 South</td>
+                </tr>
+                
+                <tr>
+                    <td>Sentret</td>
+                    <td>Route 202</td>
+                </tr>
+                
+                <tr>
+                    <td>Togepi</td>
+                    <td>Route 230</td>
+                </tr>
+                
+                <tr>
+                    <td>Mareep</td>
+                    <td>Valley Windworks</td>
+                </tr>
+                
+                <tr>
+                    <td>Flaaffy</td>
+                    <td>Route 222</td>
+                </tr>
+                
+                <tr>
+                    <td>Hoppip</td>
+                    <td>Route 205 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Sunkern</td>
+                    <td>Route 204 North</td>
+                </tr>
+                
+                <tr>
+                    <td>Wobbuffet</td>
+                    <td>Lake Verity, Lake Valor</td>
+                </tr>
+                
+                <tr>
+                    <td>Smeargle</td>
+                    <td>Route 208</td>
+                </tr>
+                
+                <tr>
+                    <td>Tyrogue</td>
+                    <td>Route 211</td>
+                </tr>
+                
+                <tr>
+                    <td>Miltank</td>
+                    <td>Route 210 South</td>
+                </tr>
+                
+                <tr>
+                    <td>Swellow</td>
+                    <td>Route 213</td>
+                </tr>
+                
+                <tr>
+                    <td>Kirlia</td>
+                    <td>Route 209</td>
+                </tr>
+                
+                <tr>
+                    <td>Nincada</td>
+                    <td>Eterna Forest</td>
+                </tr>
+                
+                <tr>
+                    <td>Loudred</td>
+                    <td>Mt. Coronet</td>
+                </tr>
+                
+                <tr>
+                    <td>Torkoal</td>
+                    <td>Route 227, Stark Mountain</td>
+                </tr>
+                
+                <tr>
+                    <td>Baltoy</td>
+                    <td>Route 206</td>
+                </tr>
+                
+                <tr>
+                    <td>Slowpoke</td>
+                    <td>Route 205 North</td>
+                </tr>
+
+                <tr>
+                    <td>Stantler</td>
+                    <td>Route 207</td>
+                </tr>
+
+                <tr>
+                    <td>Bagon</td>
+                    <td>Route 210 North</td>
+                </tr>
+
+                <tr>
+                    <td>Aron</td>
+                    <td>Fuego Ironworks</td>
+                </tr>
+
+                <tr>
+                    <td>Poochyena**</td>
+                    <td>Route 214</td>
+                </tr>
+            </tbody>
+            </table>
+        <br>
+
+            <div class="sources">
+                <h3 style="text-align: center;"> Sources </h3>
+                <p>1. <a href="https://bulbapedia.bulbagarden.net">Bulbapedia</a></p>
+                <p>2. <a href="https://www.serebii.net">Serebii</a></p>
+                <p>3. Fellow shiny hunter @Magnemite</p>
+                <p>4. <a href="https://smogon.com">Smogon</a></p>
+            </div> <br>
+            <button type="button" class="floatCenter" onclick="backToTop()">Back to Top</button><br>
+
+            <div class="floatRight" >
+                <p class="lastUpdated">
+                    Last Updated - 04/26/2024 Page Created
+                </p>
+            </div>       
+        </main>
+
+        <aside id="asideSidebar">
+
+        </aside>
+
+        <footer id="footerInfo">
+
+        </footer>
+    </div>
+</body>
+
+</html>
+

@@ -1,0 +1,48 @@
+/* General CSS */
+caption{
+    font-size: 20px;
+    font-style: italic;
+}
+
+table{
+    border: 1px solid #CCC; 
+    font-family: gen4Pokemon;
+    background-color: var(--main);
+    margin: auto;
+    caption-side: bottom;
+}
+
+table td{
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #CCC;    
+}
+
+table tbody th{
+    background-color: var(--submain)
+}
+
+#radarTool{
+    margin-top: 5px;
+    background-color: var(--highlights);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Diamond Table */
+#diamondTable thead th{
+    background-color: rgb(111, 111, 247);
+}
+
+/* Pearl Table */
+#pearlTable thead th{
+    background-color: pink;
+}
+
+/* Plat Table */
+#platTable thead th{
+    background-color: gray;
+}
+
+
