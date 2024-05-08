@@ -79,20 +79,6 @@
                 Pokeradar automatically.
             </p><br>
 
-            <h2>Chain Probability Calculator</h2>
-            <div class="important" id="radarTool">
-            <p>
-                    Enter a number between 1 and 40: 
-                
-                <input type="number" min="1" max="40" id="chainNum" placeholder="1">
-        
-                <button onclick="chain()">Calculate</button>
-            </p>
-                <p id="results">
-        
-                </p>
-            </div>
-
             <h2 id="chapter2radar">How The Pokeradar Works</h2>
             <p>
                 When the player uses the Pokeradar, up to 4 grass patches will shake. There are <u>3 different types</u> of shaking grass:
@@ -139,6 +125,8 @@
                 This means you have a 98% chance of continuing your chain every encounter as long as you always <b>catch</b> the Pokemon in the outer ring. If you were to hit this 98% chance for every encounter, you would theoretically hit a chain of 40 approximately 44% of the time. It's also worth mentioning that resetting the radar will get rid of your 10% catch boost, which will also affect your odds of getting to a chain of 40.<br>
                 <br>
                 It is important you use a large patch of grass when chaining, as every time you use the radar the game will randomly assign grass patches within the 4 rings. If all 4 positions it chooses do not have available grass, the chain will simply break. 
+                <br><br>
+                According to <a href="https://www.smogon.com/ingame/guides/dpp_pokeradar" target="_blank" class="link">Smogon</a>, "A recent discovery by ShantyTown indicates that if a patch is set to break a chain, there is a 50/50 chance it will rustle as the opposite type". This technically helps us, as 50% of the time our chain would break out simply out of bad RNG, it will instead rustle as the type of grass you should be avoiding, allowing you to chain for a little longer.
             </p><br>
 
             <h2 id="chapter3radar">How to Chain</h2>
@@ -196,6 +184,19 @@
             <p>
                 This caps at a chain of 40, with the chance of encountering a shiny patch being 0.5% per patch, or about 2% per use of the Pokeradar (assuming all 4 patches appear).
             </p><br>
+
+            <div class="important" id="radarTool">
+            <p>
+                    Enter a number between 1 and 40: 
+                
+                <input type="number" min="1" max="40" id="chainNum" placeholder="1">
+        
+                <button onclick="chain()">Calculate</button>
+            </p>
+                <p id="results">
+        
+                </p>
+            </div>
 
 
             <h2 id="chapter6radar" >Encounter Tables</h2>
@@ -796,11 +797,13 @@
                 <p>3. Fellow shiny hunter @Magnemite</p>
                 <p>4. <a href="https://smogon.com">Smogon</a></p>
             </div> <br>
-            <button type="button" class="floatCenter" onclick="backToTop()">Back to Top</button><br>
+            <div style="text-align: center;">
+                <button type="button" onclick="backToTop()">Back to Top</button><br>
+            </div>
 
-            <div class="floatRight" >
+            <div style="text-align: right;" >
                 <p class="lastUpdated">
-                    Last Updated - 04/26/2024 Page Created
+                    Last Updated - 05/07/2024 Minor Information and Layout Updates
                 </p>
             </div>       
         </main>
