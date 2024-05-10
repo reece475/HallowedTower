@@ -21,3 +21,16 @@
     text-align: center;
 }
 
+.sprites{
+    height: 160px;
+    width: auto;
+}
+
+/*Code to put Hunt Type and Encounter Rate into two Columns */
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+}
