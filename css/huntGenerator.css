@@ -1,0 +1,19 @@
+#pokemon{
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+    color: var(--highlights);
+}
+
+#typeTitle, #methodTitle, #encounterTitle, #locationTitle{
+    text-align: center;
+}
+
+#sprite, #type, #method, #encounterRate, #location{
+    text-align: center;
+}
+
+#buttonArea{
+    text-align: center;
+}
+

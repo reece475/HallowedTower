@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z43JE0B4KH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z43JE0B4KH');
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/base.css"/>
+    <link rel="stylesheet" href="../../css/huntGenerator.css"/>
+
+    <script src="../../js/base.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../js/load.js"></script>
+    <script src="../../js/huntGenerator.js"></script>
+
+    <meta name="description" content="A Page To Generate A Random Hunt In Gen 4">
+    <meta name="keywords" content="Pokemon, sinnoh, shiny, hunt, What To Hunt, What Should I Hunt In Platinum">
+    <title>Hunt Generator</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <header>
+            <p id="bannerText"> A Guide to Sinnoh</p>
+            <a href="../../">
+                <img id="logo" src="../../images/NewBanner.png" style="max-width: 100%; height: auto;">
+            </a> 
+        </header>
+
+        <div id="mobileButton">
+            <br>
+            <button class="floatCenter" onclick="hideMenu()">Menu</button>
+            <br><br><br>
+        </div>
+
+        <nav id="navSidebar">
+
+        </nav>
+
+        <main>
+
+            <h1>What Should I Hunt?</h1><br>
+
+            <p class="highlightSection">
+                Too many hunts to choose from? Need some inspiration? Choose the game you'd like to hunt in, and click the button! 
+            </p><br>
+            <div style="text-align: center;">
+                <input type="radio" name="games" id="diamond" checked>
+                <label for="diamond">Diamond</label>
+                <input type="radio" name="games" id="pearl">
+                <label for="pearl">Pearl</label>
+                <input type="radio" name="games" id="platinum">
+                <label for="platinum">Platinum</label>
+                <input type="radio" name="games" id="hg">
+                <label for="hg">HeartGold</label>
+                <input type="radio" name="games" id="ss">
+                <label for="ss">SoulSilver</label>
+            </div>
+            
+            <br>
+        
+            <div id="results">
+                <p id="pokemon"></p>
+                <p id="sprite"></p>
+            <br>
+                <h2 id="typeTitle"></h2>
+                <p id="type"></p>
+            <br>
+                <h2 id="encounterTitle"></h2>
+                <p id="encounterRate"></p>
+            <br>
+                <h2 id="locationTitle"></h2>
+                <p id="location"></p>
+            <br>
+                <h2 id="methodTitle"></h2>
+                <p id="method"></p>
+
+
+
+
+            </div>
+        
+            <div id="buttonArea">
+                <button onclick="checkButton()">Generate Hunt!</button>
+            </div>
+
+
+
+
+            <div class="floatRight" >
+                <p class="lastUpdated">
+                    <!--UPDATES HERE-->
+                </p>
+            </div>       
+        </main>
+
+        <aside id="asideSidebar">
+
+        </aside>
+
+        <footer id="footerInfo">
+
+        </footer>
+    </div>
+</body>
+
+</html>
+
