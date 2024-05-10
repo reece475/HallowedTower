@@ -55,7 +55,7 @@
             <h1>What Should I Hunt?</h1><br>
 
             <p class="highlightSection">
-                Too many hunts to choose from? Need some inspiration? Choose the game you'd like to hunt in, and click the button! 
+                Too many hunts to choose from? Need some inspiration? Choose the game you'd like to hunt in, and click the button! (If you get the same hunt twice in a row, simply click the button again).
             </p><br>
             <div style="text-align: center;">
                 <input type="radio" name="games" id="diamond" checked>
@@ -68,6 +68,10 @@
                 <label for="hg">HeartGold</label>
                 <input type="radio" name="games" id="ss">
                 <label for="ss">SoulSilver</label>
+            </div>
+
+            <div id="buttonArea">
+                <button onclick="checkButton()">Generate Hunt!</button>
             </div>
             
             <br>
@@ -87,15 +91,8 @@
             <br>
                 <h2 id="methodTitle"></h2>
                 <p id="method"></p>
-
-
-
-
             </div>
-        
-            <div id="buttonArea">
-                <button onclick="checkButton()">Generate Hunt!</button>
-            </div>
+    
 
 
 

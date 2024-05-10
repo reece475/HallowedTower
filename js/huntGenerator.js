@@ -56,12 +56,22 @@ let chatot = new Hunt(
     "Chatot can be hunted during the <u>Morning and Day</u>. In Gen 4 you still have access to using the Microphone for Chatter, making this a unique Gen 4 shiny to get!",
     "20%", "Route 222"
 );
+let finneon = new Hunt(
+    "Finneon", "<img src=../../images/huntGenerator/finneon.gif> <img src=../../images/huntGenerator/finneonShiny.gif>", "Fishing Encounters",
+    "Using a <u>Good Rod</u> combined with Sticky Hold (which was fixed in Platinum) this hunt is not nearly as bad as it seems! You can also use a <u>Super Rod</u> to find Lumineon instead.",
+    "45%", "Route 219"
+);
+let munchlax = new Hunt(
+    "Munchlax", "<img src=../../images/huntGenerator/munchlax.gif> <img src=../../images/huntGenerator/munchlaxShiny.gif>", "Soft Resets",
+    "Once you know your <a href='../guides/honeyTrees' class='link'>Honey Trees</a> and read the guide on how to hunt them, the hardest part of this hunt is simply finding your first Munchlax! After that it's simple Soft Resets.",
+    "1% encounter, 100% once you find it", "Honey Trees"
+);
 
 
 //Array of each hunt for each game
-const pearlHunts = [spiritomb, bronzongDP, chatot];
-const diamondHunts = [spiritomb, bronzongDP, chatot];
-const platHunts = [spiritomb, dusclops, bronzongPlat, scyther, magikarp];
+const pearlHunts = [spiritomb, bronzongDP, chatot, munchlax];
+const diamondHunts = [spiritomb, bronzongDP, chatot, munchlax];
+const platHunts = [spiritomb, dusclops, bronzongPlat, scyther, magikarp, finneon, munchlax];
 const hgHunts = [hgssStarter, miltank];
 const ssHunts = [hgssStarter, miltank];
 
