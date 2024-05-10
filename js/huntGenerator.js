@@ -66,12 +66,22 @@ let munchlax = new Hunt(
     "Once you know your <a href='../guides/honeyTrees' class='link'>Honey Trees</a> and read the guide on how to hunt them, the hardest part of this hunt is simply finding your first Munchlax! After that it's simple Soft Resets.",
     "1% encounter, 100% once you find it", "Honey Trees"
 );
+let zangoose = new Hunt(
+    "Zangoose", "<img src=../../images/huntGenerator/zangoose.gif class='sprites'> <img src=../../images/huntGenerator/zangooseShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
+    "In the postgame, if you insert a <u>Ruby Cartridge</u>, you can find Zangoose for a whopping 80% encounter rate with a Repel Trick (Level 18 - D/P) (Level 20 - Pt). Just bring a Pokemon with <u>No Guard/Illuminate and a White Flute</u>, as the encounter rate is pretty low!",
+    "80%", "Route 208"
+);
+let seviper = new Hunt(
+    "Seviper", "<img src=../../images/huntGenerator/seviper.gif class='sprites'> <img src=../../images/huntGenerator/seviperShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
+    "In the postgame, if you insert a <u>Sapphire Cartridge</u>, you can find Seviper for a whopping 80% encounter rate with a Repel Trick (Level 18 - D/P) (Level 20 - Pt). Just bring a Pokemon with <u>No Guard/Illuminate and a White Flute</u>, as the encounter rate is pretty low!",
+    "80%", "Route 208"
+);
 
 
 //Array of each hunt for each game
-const pearlHunts = [spiritomb, bronzongDP, chatot, munchlax];
-const diamondHunts = [spiritomb, bronzongDP, chatot, munchlax];
-const platHunts = [spiritomb, dusclops, bronzongPlat, scyther, magikarp, finneon, munchlax];
+const pearlHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper];
+const diamondHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper];
+const platHunts = [spiritomb, dusclops, bronzongPlat, scyther, magikarp, finneon, munchlax, zangoose, seviper];
 const hgHunts = [hgssStarter, miltank];
 const ssHunts = [hgssStarter, miltank];
 
