@@ -27,14 +27,10 @@
 }
 
 /*Code to put Hunt Type and Encounter Rate into two Columns */
-.huntcolumn {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-  .huntrow:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.row {
+    display: flex;
+}
+
+.column{
+    flex: 50%;
+}
