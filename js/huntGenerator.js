@@ -13,66 +13,66 @@ class Hunt{
 
 //Code to create each individual hunt as an object we can store in the arrays
 let spiritomb = new Hunt(
-    "Spiritomb", "<img src=../../images/huntGenerator/spiritomb.gif class='sprites'> <img src=../../images/huntGenerator/spiritombShiny.gif class='sprites'>", "Soft Resets", 
+    "Spiritomb", "<img src=../../images/huntGenerator/spiritombShiny.gif class='sprites'>", "Soft Resets", 
     "After talking to 32 people underground, you can encounter and soft reset for Spiritomb at the Hallowed Tower.", 
     "100%", "Route 209"
 );
 let dusclops = new Hunt(
-    "Dusclops", "<img src=../../images/huntGenerator/dusclops.gif class='sprites'> <img src=../../images/huntGenerator/dusclopsShiny.gif class='sprites'>", "Random Encounters/Repel Trick", 
+    "Dusclops", "<img src=../../images/huntGenerator/dusclopsShiny.gif class='sprites'>", "Random Encounters/Repel Trick", 
     "At <u>night</u>, there is a <u>Level 39 Repel Trick</u> to find Dusclops", 
     "50%", "Sendoff Spring"
 );
 let hgssStarter = new Hunt(
-    "Cyndaquil/Chikorita/Totodile", "<img src=../../images/huntGenerator/starters.png class='sprites'> <img src=../../images/huntGenerator/startersShiny.png class='sprites'>", "Soft Resets",
+    "Cyndaquil/Chikorita/Totodile", "<img src=../../images/huntGenerator/cyndaquilShiny.gif class='sprites'> <img src=../../images/huntGenerator/chikoritaShiny.gif class='sprites'> <img src=../../images/huntGenerator/totodileShiny.gif class='sprites'>", "Soft Resets",
     "Resetting for these at Birch's Lab is great because you can check if they're shiny without having to actually pick one! Simply scroll through all three, and if none of them are shiny, reset! This is likely the fastest 8192 hunt in Generation 4.", "100%", "Professor Birch's Lab"
 );
 let bronzongDP = new Hunt(
-    "Bronzong", "<img src=../../images/huntGenerator/bronzong.gif class='sprites'> <img src=../../images/huntGenerator/bronzongShiny.gif class='sprites'>", "Random Encounters/Magnet Pull", 
+    "Bronzong", "<img src=../../images/huntGenerator/bronzongShiny.gif class='sprites'>", "Random Encounters/Magnet Pull", 
     "Random encounters with a Magnet Pull Pokemon at the front of your party makes this hunt super easy to do!", 
     "62.5%", "Mt. Coronet (4F-7F)"
 );
 let bronzongPlat = new Hunt(
-    "Bronzong", "<img src=../../images/huntGenerator/bronzong.gif class='sprites'> <img src=../../images/huntGenerator/bronzongShiny.gif class='sprites'>", "Random Encounters/Magnet Pull", 
+    "Bronzong", "<img src=../../images/huntGenerator/bronzongShiny.gif class='sprites'>", "Random Encounters/Magnet Pull", 
     "Random encounters with a Magnet Pull Pokemon at the front of your party makes this hunt super easy to do!", 
     "60%", "Mt. Coronet (2F-7F)"
 );
 let miltank = new Hunt(
-    "Miltank", "<img src=../../images/huntGenerator/miltank.gif class='sprites'> <img src=../../images/huntGenerator/miltankShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
+    "Miltank", "<img src=../../images/huntGenerator/miltankShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
     "With a <u>Level 35 Repel Trick</u> this is one of the easiest ways to hunt Miltank in HGSS!", 
     "48.78%", "Route 47 (Grass Patch Up the Waterfall)" 
 );
 let scyther = new Hunt(
-    "Scyther", "<img src=../../images/huntGenerator/scyther.gif class='sprites'> <img src=../../images/huntGenerator/scytherShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
+    "Scyther", "<img src=../../images/huntGenerator/scytherShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
     "In <u>the morning</u>, with a <u>Level 21</u> repel trick, this is definitely the easiest way of hunting a Scyther in the Sinnoh games!",
     "47.62%", "Route 210 South"
 );
 let magikarp = new Hunt(
-    "Magikarp", "<img src=../../images/huntGenerator/magikarp.gif class='sprites'> <img src=../../images/huntGenerator/magikarpShiny.gif class='sprites'>", "Fishing Encounters",
+    "Magikarp", "<img src=../../images/huntGenerator/magikarpShiny.gif class='sprites'>", "Fishing Encounters",
     "In the Resort Area, when fishing with the Super Rod, you have a chance of finding a Magikarp ranging from Level 1-100!",
     "100%", "Resort Area"
 );
 let chatot = new Hunt(
-    "Chatot", "<img src=../../images/huntGenerator/chatot.gif class='sprites'> <img src=../../images/huntGenerator/chatotShiny.gif class='sprites'>", "Random Encounters", 
+    "Chatot", "<img src=../../images/huntGenerator/chatotShiny.gif class='sprites'>", "Random Encounters", 
     "Chatot can be hunted during the <u>Morning and Day</u>. In Gen 4 you still have access to using the Microphone for Chatter, making this a unique Gen 4 shiny to get!",
     "20%", "Route 222"
 );
 let finneon = new Hunt(
-    "Finneon", "<img src=../../images/huntGenerator/finneon.gif class='sprites'> <img src=../../images/huntGenerator/finneonShiny.gif class='sprites'>", "Fishing Encounters",
+    "Finneon", "<img src=../../images/huntGenerator/finneonShiny.gif class='sprites'>", "Fishing Encounters",
     "Using a <u>Good Rod</u> combined with Sticky Hold (which was fixed in Platinum) this hunt is not nearly as bad as it seems! You can also use a <u>Super Rod</u> to find Lumineon instead.",
     "45%", "Route 219"
 );
 let munchlax = new Hunt(
-    "Munchlax", "<img src=../../images/huntGenerator/munchlax.gif class='sprites'> <img src=../../images/huntGenerator/munchlaxShiny.gif class='sprites'>", "Soft Resets",
+    "Munchlax", "<img src=../../images/huntGenerator/munchlaxShiny.gif class='sprites'>", "Soft Resets",
     "Once you know your <a href='../guides/honeyTrees' class='link'>Honey Trees</a> and read the guide on how to hunt them, the hardest part of this hunt is simply finding your first Munchlax! After that it's simple Soft Resets.",
     "1% encounter, 100% once you find it", "Honey Trees"
 );
 let zangoose = new Hunt(
-    "Zangoose", "<img src=../../images/huntGenerator/zangoose.gif class='sprites'> <img src=../../images/huntGenerator/zangooseShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
+    "Zangoose", "<img src=../../images/huntGenerator/zangooseShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
     "In the postgame, if you insert a <u>Ruby Cartridge</u>, you can find Zangoose for a whopping 80% encounter rate with a Repel Trick (Level 18 - D/P) (Level 20 - Pt). Just bring a Pokemon with <u>No Guard/Illuminate and a White Flute</u>, as the encounter rate is pretty low!",
     "80%", "Route 208"
 );
 let seviper = new Hunt(
-    "Seviper", "<img src=../../images/huntGenerator/seviper.gif class='sprites'> <img src=../../images/huntGenerator/seviperShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
+    "Seviper", "<img src=../../images/huntGenerator/seviperShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
     "In the postgame, if you insert a <u>Sapphire Cartridge</u>, you can find Seviper for a whopping 80% encounter rate with a Repel Trick (Level 18 - D/P) (Level 20 - Pt). Just bring a Pokemon with <u>No Guard/Illuminate and a White Flute</u>, as the encounter rate is pretty low!",
     "80%", "Route 208"
 );

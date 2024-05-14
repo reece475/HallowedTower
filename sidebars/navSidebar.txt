@@ -22,5 +22,6 @@
             <h1>Fun</h1>
             <ul class="sidebarList">
                 <li><a href="../fun/forgottenAreas">Forgotten Areas in Gen 4</a></li>
+                <li><a href="../fun/huntGenerator">Shiny Hunt Generator</a></li>
             </ul>
             
