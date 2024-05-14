@@ -76,6 +76,9 @@ let seviper = new Hunt(
     "In the postgame, if you insert a <u>Sapphire Cartridge</u>, you can find Seviper for a whopping 80% encounter rate with a Repel Trick (Level 18 - D/P) (Level 20 - Pt). Just bring a Pokemon with <u>No Guard/Illuminate and a White Flute</u>, as the encounter rate is pretty low!",
     "80%", "Route 208"
 );
+//Tropius in Great Marsh Plat
+//Pineco Headbutt in HGSS
+//Heracross Headbutt in HGSS
 
 
 //Array of each hunt for each game
