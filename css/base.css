@@ -345,7 +345,7 @@ button{
     color: var(--white);
     background-color: var(--darker);
     padding: 5px 10px;
-    margin: 10px;
+    margin: 5px;
 }
 
 select{
