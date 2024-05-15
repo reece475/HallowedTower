@@ -43,8 +43,8 @@ let miltank = new Hunt(
 );
 let scyther = new Hunt(
     "Scyther", "<img src=../../images/huntGenerator/scytherShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
-    "In <u>the morning</u>, with a <u>Level 21</u> repel trick, this is definitely the easiest way of hunting a Scyther in the Sinnoh games!",
-    "47.62%", "Route 210 South"
+    "In <u>the morning</u>, with a <u>Level 22</u> repel trick, this is definitely the easiest way of hunting a Scyther in the Sinnoh games! You also have the chance to phase on Marill or Kadabra, which are both great phases.",
+    "50%", "Route 215"
 );
 let magikarp = new Hunt(
     "Magikarp", "<img src=../../images/huntGenerator/magikarpShiny.gif class='sprites'>", "Fishing Encounters",
@@ -76,17 +76,32 @@ let seviper = new Hunt(
     "In the postgame, if you insert a <u>Sapphire Cartridge</u>, you can find Seviper for a whopping 80% encounter rate with a Repel Trick (Level 18 - D/P) (Level 20 - Pt). Just bring a Pokemon with <u>No Guard/Illuminate and a White Flute</u>, as the encounter rate is pretty low!",
     "80%", "Route 208"
 );
-//Tropius in Great Marsh Plat
-//Pineco Headbutt in HGSS
-//Heracross Headbutt in HGSS
-
+let tropius = new Hunt(
+    "Tropius", "<img src=../../images/huntGenerator/tropiusShiny.gif class='sprites'>", "Random Encounters/Safari", "In <u>Areas 1 and 2</u> in the Great Marsh, during the <u>Morning and Day</u> there is a 20% chance you can find Tropius. This rate goes up even more if it happens to be one of the binocular Pokemon!",
+    "20% (Higher if Binocular Encounter)", "Great Marsh"
+);
+let gligar = new Hunt(
+    "Gligar", "<img src=../../images/huntGenerator/gligarShiny.gif class='sprites'>", "Random Encounters/Repel Trick", "This was submitted by LegendLinke! In <u>HeartGold</u>, on Route 45 with a <u>Level 24</u> repel trick, it brings Gligar all the way up to 66.67%! ",
+    "66.67%", "Route 45"
+)
+let skarmory = new Hunt(
+    "Skarmory", "<img src=../../images/huntGenerator/skarmoryShiny.gif class='sprites'>", "Random Encounters/Repel Trick", "This was submitted by LegendLinke! In <u>SoulSilver</u>, on Route 45, with a <u>Level 26</u> repel trick, Skarmory is a guaranteed 100% encounter! The encounter rate is low however, so bring Illuminate and a White Flute!",
+    "100%", "Route 45" 
+)
+let drifloon = new Hunt(
+    "Drifloon", "<img src=../../images/huntGenerator/drifloonShiny.gif class='sprites'>", "Soft Resets", "This was submitted by TalesOfTaylor! On <u>Fridays</u> you can stop outside the Valley Windworks to do a simple soft reset for Drifloon! Once you save in front of it, even if the DS clock changes, Drifloon will stay as long as you don't leave the area.",
+    "100%", "Valley Windworks"
+)
+let trophyGarden = new Hunt(
+    "Trophy Garden Exclusives", "<img src=../../images/huntGenerator/drifloonShiny.gif class='sprites'> <img src=../../images/huntGenerator/clefairyShiny.gif class='sprites'><img src=../../images/huntGenerator/jigglyPuffShiny.gif class='sprites'><img src=../../images/huntGenerator/meowthShiny.gif class='sprites'><img src=../../images/huntGenerator/chanseyShiny.gif class='sprites'><img src=../../images/huntGenerator/eeveeShiny.gif class='sprites'><img src=../../images/huntGenerator/porygonShiny.gif class='sprites'><img src=../../images/huntGenerator/cleffaShiny.gif class='sprites'><img src=../../images/huntGenerator/igglybuffShiny.gif class='sprites'><img src=../../images/huntGenerator/marillShiny.gif class='sprites'><img src=../../images/huntGenerator/azurillShiny.gif class='sprites'><img src=../../images/huntGenerator/plusleShiny.gif class='sprites'><img src=../../images/huntGenerator/minunShiny.gif class='sprites'><img src=../../images/huntGenerator/castformShiny.gif class='sprites'><img src=../../images/huntGenerator/bonslyShiny.gif class='sprites'><img src=../../images/huntGenerator/mimejrShiny.gif class='sprites'><img src=../../images/huntGenerator/happinyShiny.gif class='sprites'>", "Random Encounters/Repel Trick", "This was submitted by MarkyMark! In Diamond and Pearl, with a <u>Level 18</u> Repel Trick, you can bring the daily Trophy Garden Pokemon up to 50% alongside Pikachu!", "50%", "Trophy Garden"
+);
 
 //Array of each hunt for each game
-const pearlHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper];
-const diamondHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper];
-const platHunts = [spiritomb, dusclops, bronzongPlat, scyther, magikarp, finneon, munchlax, zangoose, seviper];
-const hgHunts = [hgssStarter, miltank];
-const ssHunts = [hgssStarter, miltank];
+const pearlHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper, drifloon, trophyGarden];
+const diamondHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper, drifloon, trophyGarden];
+const platHunts = [spiritomb, dusclops, bronzongPlat, scyther, magikarp, finneon, munchlax, zangoose, seviper, tropius, drifloon];
+const hgHunts = [hgssStarter, miltank, gligar];
+const ssHunts = [hgssStarter, miltank, skarmory];
 
 
 //Each function will generate a random number, and grab all the information from each hunt within the array
