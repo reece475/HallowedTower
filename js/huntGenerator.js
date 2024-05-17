@@ -67,12 +67,12 @@ let munchlax = new Hunt(
     "1% encounter, 100% once you find it", "Honey Trees"
 );
 let zangoose = new Hunt(
-    "Zangoose", "<img src=../../images/huntGenerator/zangooseShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
+    "Zangoose", "<img src=../../images/huntGenerator/zangooseShiny.gif class='sprites'>", "Random Encounters/Repel Trick/GBA Insertion",
     "In the postgame, if you insert a <u>Ruby Cartridge</u>, you can find Zangoose for a whopping 80% encounter rate with a Repel Trick (Level 18 - D/P) (Level 20 - Pt). Just bring a Pokemon with <u>No Guard/Illuminate and a White Flute</u>, as the encounter rate is pretty low!",
     "80%", "Route 208"
 );
 let seviper = new Hunt(
-    "Seviper", "<img src=../../images/huntGenerator/seviperShiny.gif class='sprites'>", "Random Encounters/Repel Trick",
+    "Seviper", "<img src=../../images/huntGenerator/seviperShiny.gif class='sprites'>", "Random Encounters/Repel Trick/GBA Insertion",
     "In the postgame, if you insert a <u>Sapphire Cartridge</u>, you can find Seviper for a whopping 80% encounter rate with a Repel Trick (Level 18 - D/P) (Level 20 - Pt). Just bring a Pokemon with <u>No Guard/Illuminate and a White Flute</u>, as the encounter rate is pretty low!",
     "80%", "Route 208"
 );
@@ -95,11 +95,20 @@ let drifloon = new Hunt(
 let trophyGarden = new Hunt(
     "Trophy Garden Exclusives", "<img src=../../images/huntGenerator/clefairyShiny.gif class='sprites'><img src=../../images/huntGenerator/jigglypuffShiny.gif class='sprites'><img src=../../images/huntGenerator/meowthShiny.gif class='sprites'><img src=../../images/huntGenerator/chanseyShiny.gif class='sprites'><img src=../../images/huntGenerator/eeveeShiny.gif class='sprites'><img src=../../images/huntGenerator/porygonShiny.gif class='sprites'><img src=../../images/huntGenerator/cleffaShiny.gif class='sprites'><img src=../../images/huntGenerator/igglybuffShiny.gif class='sprites'><img src=../../images/huntGenerator/marillShiny.gif class='sprites'><img src=../../images/huntGenerator/azurillShiny.gif class='sprites'><img src=../../images/huntGenerator/plusleShiny.gif class='sprites'><img src=../../images/huntGenerator/minunShiny.gif class='sprites'><img src=../../images/huntGenerator/castformShiny.gif class='sprites'><img src=../../images/huntGenerator/bonslyShiny.gif class='sprites'><img src=../../images/huntGenerator/mimejrShiny.gif class='sprites'><img src=../../images/huntGenerator/happinyShiny.gif class='sprites'>", "Random Encounters/Repel Trick", "This was submitted by MarkyMark! In Diamond and Pearl, with a <u>Level 18</u> Repel Trick, you can bring the daily Trophy Garden Pokemon up to 50% alongside Pikachu!", "50%", "Trophy Garden"
 );
+let eevee = new Hunt(
+    "Eevee", "<img src=../../images/huntGenerator/eeveeShiny.gif class='sprites'>", "Soft Resets", "This was submitted by MarkyMark! In Platinum Eevee is actually obtainable pre-Nat Dex, meaning you can stop by Bebe's House in Hearthome City and grab it as soon as you can! You also have the choice to evolve it into either of the two new Eeveelutions: Glaceon or Leafeon.", "100%", "Bebe's House in Hearthome City"
+);
+let solrock = new Hunt(
+    "Solrock", "<img src=../../images/huntGenerator/solrockShiny.gif class='sprites'>", "Random Encounters/Repel Trick/GBA Insertion", "This was submitted by MarkyMark. In D/P/Pt, once you have the Nat Dex, if you have a <u>Ruby Cartridge</u> inserted you can use a <u>Level 4</u> Repel Trick at Lake Verity to bring Solrock up to 40%! Without the Repel Trick it sits around 8%.", "40%", "Lake Verity"
+);
+let lunatone = new Hunt(
+    "Lunatone", "<img src=../../images/huntGenerator/lunatoneShiny.gif class='sprites'>", "Random Encounters/Repel Trick/GBA Insertion", "This was submitted by MarkyMark. In D/P/Pt, once you have the Nat Dex, if you have a <u>Sapphire Cartridge</u> inserted you can use a <u>Level 4</u> Repel Trick at Lake Verity to bring Lunatone up to 40%! Without the Repel Trick it sits around 8%.", "40%", "Lake Verity"
+);
 
 //Array of each hunt for each game
-const pearlHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper, drifloon, trophyGarden];
-const diamondHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper, drifloon, trophyGarden];
-const platHunts = [spiritomb, dusclops, bronzongPlat, scyther, magikarp, finneon, munchlax, zangoose, seviper, tropius, drifloon];
+const pearlHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper, drifloon, trophyGarden, solrock, lunatone];
+const diamondHunts = [spiritomb, bronzongDP, chatot, munchlax, zangoose, seviper, drifloon, trophyGarden, solrock, lunatone];
+const platHunts = [spiritomb, dusclops, bronzongPlat, scyther, magikarp, finneon, munchlax, zangoose, seviper, tropius, drifloon, eevee, solrock, lunatone];
 const hgHunts = [hgssStarter, miltank, gligar];
 const ssHunts = [hgssStarter, miltank, skarmory];
 
