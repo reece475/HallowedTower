@@ -6,9 +6,10 @@
     --white: #FFFFFF;
     --background: #000000;
     --main: #333232;
-    --submain: #7f8284;
+    --submain: #84847f;
     --darker: #0d0d0d;
     --highlights: #9e2224;
+    --contrast: #E2C569;
 }
 
 /* Imports the Gen 4 Pokemon Font */
@@ -151,9 +152,9 @@ main{
 nav{
     grid-area: nav;
     text-align: center;
-    background-color:var(--darker);
+    background-color:var(--notice);
     font-family: gen4Pokemon;
-    color: var(--white);
+    color: var(--black);
     word-wrap: break-word;
     font-size: 18px;
 }
@@ -313,6 +314,13 @@ h3{
     padding: 5px;
     margin-bottom: 10px;
     font-family: gen4Pokemon;
+}
+
+.notice{
+    background-color: var(--contrast);
+    color: var(--black);
+    padding: 10px;
+    border-radius: 15px;
 }
 
 /* Highlighted Grey Sections */
