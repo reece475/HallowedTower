@@ -170,7 +170,7 @@ aside{
     text-align: center;
     background-color:var(--darker);
     font-family: gen4Pokemon;
-    color: var(--white);
+    color: var(--contrast);
     word-wrap: break-word;
     font-size: 23px;
 }
