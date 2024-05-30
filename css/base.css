@@ -152,9 +152,9 @@ main{
 nav{
     grid-area: nav;
     text-align: center;
-    background-color:var(--notice);
+    background-color:var(--darker);
     font-family: gen4Pokemon;
-    color: var(--black);
+    color: var(--white);
     word-wrap: break-word;
     font-size: 18px;
 }
@@ -208,7 +208,8 @@ then on hover simply changes the color to black */
 
 /* Creates red groups on sidebar */
 .sidebarList{
-    background-color: var(--highlights);
+    background-color: var(--contrast);
+    color: var(--black);
     margin-top: 0%;
     margin-left: 10%;
     margin-right: 10%;
