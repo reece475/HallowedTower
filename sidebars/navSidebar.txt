@@ -1,27 +1,27 @@
             <h1> General</h1>
             <ul class="sidebarList">
-                <li><a href="../general/about">About</a></li>
-                <li><a href="../general/updates">Updates</a></li>
+                <li><a href="/pages/general/about">About</a></li>
+                <li><a href="/pages/general/updates">Updates</a></li>
             </ul>
             <h1>Guides</h1>
             <ul class="sidebarList">
-                <li><a href="/guides/honeyTrees">Shiny Hunting Honey Trees</a></li>
-                <li><a href="../guides/cartridges">Detecting Counterfeit Cartridges</a></li>
-                <li><a href="../guides/spiritomb">Catching Spiritomb</a></li>
-                <li><a href="../guides/magikarp">Resort Area Magikarp</a></li>
-                <li><a href="../guides/dnsExploit">The DNS Exploit (Mystery Gifts)</a></li>
-                <li><a href="../guides/rareCandy">Farming Rare Candy</a></li>
-                <li><a href="../guides/radar">Pokeradar Guide</a></li>
+                <li><a href="/pages/guides/honeyTrees">Shiny Hunting Honey Trees</a></li>
+                <li><a href="/pages/guides/cartridges">Detecting Counterfeit Cartridges</a></li>
+                <li><a href="/pages/guides/spiritomb">Catching Spiritomb</a></li>
+                <li><a href="/pages/guides/magikarp">Resort Area Magikarp</a></li>
+                <li><a href="/pages/guides/dnsExploit">The DNS Exploit (Mystery Gifts)</a></li>
+                <li><a href="/pages/guides/rareCandy">Farming Rare Candy</a></li>
+                <li><a href="/pages/guides/radar">Pokeradar Guide</a></li>
             </ul>
             <h1>Resources</h1>
             <ul class="sidebarList">
-                <li><a href="../guides/honeyTrees#chapter2honey">Honey Tree TID + SID Checker</a></li>
-                <li><a href="../resources/shinyChance">Shiny Chance Tool</a></li>
-                <li><a href="../guides/dnsExploit#dateTool">Mystery Gift Date Calculator</a></li>
+                <li><a href="/pages/guides/honeyTrees#chapter2honey">Honey Tree TID + SID Checker</a></li>
+                <li><a href="/pages/resources/shinyChance">Shiny Chance Tool</a></li>
+                <li><a href="/pages/guides/dnsExploit#dateTool">Mystery Gift Date Calculator</a></li>
             </ul>
             <h1>Fun</h1>
             <ul class="sidebarList">
-                <li><a href="../fun/forgottenAreas">Forgotten Areas in Gen 4</a></li>
-                <li><a href="../fun/huntGenerator">Shiny Hunt Generator</a></li>
+                <li><a href="/pages/fun/forgottenAreas">Forgotten Areas in Gen 4</a></li>
+                <li><a href="/pages/fun/huntGenerator">Shiny Hunt Generator</a></li>
             </ul>
             
