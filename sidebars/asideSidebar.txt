@@ -1,6 +1,6 @@
             <h1>Socials</h1>
             <ul class="sidebarList">
-                <li><a href="../../pages/general/contact">Contact Me</a></li>
+                <li><a href="/pages/general/contact">Contact Me</a></li>
                 <li><a href="https://twitch.tv/ronk475" target="_blank">Twitch</a></li>
                 <li><a href="https://www.youtube.com/channel/UCaEn4UCrtjKdICHz-vvCguQ" target="_blank">YouTube</a></li>
                 <li><a href="https://twitter.com/Ronk475" target="_blank">Twitter</a></li>
@@ -9,15 +9,15 @@
             <h1>Affiliates</h1>
             <div class="affiliateSection">
                 <a href="https://pamtre-berry.neocities.org/" target="_blank">
-                    <img src="../../images/affiliates/pamtreicon.png" style="max-width: 88px; height: auto;">
+                    <img src="/images/affiliates/pamtreicon.png" style="max-width: 88px; height: auto;">
                 </a>
                 <a href="https://buriedrelic.neocities.org/" target="_blank">
-                    <img src="../../images/affiliates/buriedrelic.png" style="max-width: 88px; height: auto;">
+                    <img src="/images/affiliates/buriedrelic.png" style="max-width: 88px; height: auto;">
                 </a>
                 <a href="https://www.dragonflycave.com/" target="_blank">
-                    <img src="../../images/affiliates/palkiabutton.gif" style="max-width: 88px; height: auto;">
+                    <img src="/images/affiliates/palkiabutton.gif" style="max-width: 88px; height: auto;">
                 </a>
                 <a href="https://noseclub.bluwiikoon.art/index.shtml" target="_blank">
-                    <img src="../../images/affiliates/noseclub.png" style="max-width: 88px; height: auto;">
+                    <img src="/images/affiliates/noseclub.png" style="max-width: 88px; height: auto;">
                 </a>
             </div>
