@@ -5,7 +5,7 @@
             </ul>
             <h1>Guides</h1>
             <ul class="sidebarList">
-                <li><a href="../guides/honeyTrees">Shiny Hunting Honey Trees</a></li>
+                <li><a href="/guides/honeyTrees">Shiny Hunting Honey Trees</a></li>
                 <li><a href="../guides/cartridges">Detecting Counterfeit Cartridges</a></li>
                 <li><a href="../guides/spiritomb">Catching Spiritomb</a></li>
                 <li><a href="../guides/magikarp">Resort Area Magikarp</a></li>
