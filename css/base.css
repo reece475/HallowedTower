@@ -208,8 +208,7 @@ then on hover simply changes the color to black */
 
 /* Creates red groups on sidebar */
 .sidebarList{
-    background-color: var(--contrast);
-    color: var(--black);
+    background-color: var(--highlights);
     margin-top: 0%;
     margin-left: 10%;
     margin-right: 10%;
