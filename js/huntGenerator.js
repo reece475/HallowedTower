@@ -85,7 +85,7 @@ let gligar = new Hunt(
     "66.67%", "Route 45"
 )
 let skarmory = new Hunt(
-    "Skarmory", "<img src=../../images/huntGenerator/skarmoryShiny.gif class='sprites'>", "Random Encounters/Repel Trick", "This was submitted by LegendLinke! In <u>SoulSilver</u>, on Route 45, with a <u>Level 26</u> repel trick, Skarmory is a guaranteed 100% encounter! The encounter rate is low however, so bring Illuminate and a White Flute!",
+    "Skarmory", "<img src=../../images/huntGenerator/skarmoryShiny.gif class='sprites'>", "Random Encounters/Repel Trick/Magnet Pull", "This was submitted by LegendLinke! In <u>SoulSilver</u>, on Route 45, with a <u>Level 26</u> repel trick, Skarmory is a guaranteed 100% encounter! And running Magnet Pull will keep the overall wild encounter rate over 50% (which is more effective then White Flute and Illuminate).",
     "100%", "Route 45" 
 )
 let drifloon = new Hunt(

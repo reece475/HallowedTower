@@ -3,4 +3,5 @@ $(function(){
     $("#navSidebar").load("/sidebars/navSidebar.txt");
     $("#asideSidebar").load("/sidebars/asideSidebar.txt");
     $("#footerInfo").load("/sidebars/footerInfo.txt");
+    $("#loadHeader").load("/sidebars/header.txt");
   });
