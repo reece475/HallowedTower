@@ -1,0 +1,18 @@
+#layoutTable, #itemTable{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #CCC;
+}
+
+#layoutTable td, #itemTable td {
+	padding: 4px;
+	margin: 3px;
+	border: 1px solid #CCC;
+}
+
+#layoutTable th, #itemTable th {
+	background-color:var(--highlights);
+	color: var(--white);
+	font-weight: bold;
+}

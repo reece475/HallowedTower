@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../../css/reset.css"/>
     <link rel="stylesheet" href="../../css/base.css"/>
-    <!--LINK CSS HERE-->
+    <link rel="stylesheet" href="../../css/johtoSafariZone.css"/>
     <script src="../../js/base.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../../js/load.js"></script>
@@ -86,16 +86,252 @@
             <h2 id="chapter3safari">Habitat Customization</h2>
             <p>
                 When the player initially enters the Safari Zone, there are 10 different default layouts they may get. In every arrangement, the Peak Area will be the area the player enters into, in order to facilitate the First Challenge. As well, the Desert will not be present in any of the 10 layouts, in order to facilitate the Second Challenge.
+            </p>
 
-                <!--Insert Table of All Ten Layouts Here-->
-            </p><br>
+                <!--Table of Layouts-->
+                <table id="layoutTable">
+                    <thead>
+                        <tr>
+                            <th>Layout #</th>
+                            <th colspan="3">Area Layout</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td>Plains</td>
+                            <td>Swamp</td>
+                            <td>Meadow</td>
+                        </tr>
+                        <tr>
+                            <td>Wetland</td>
+                            <td>Peak</td>
+                            <td>Forest</td>                           
+                        </tr>
+
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">2</td>
+                            <td>Meadow</td>
+                            <td>Marshland</td>
+                            <td>Wetland</td>                            
+                        </tr>
+                        <tr>
+                            <td>Forest</td>
+                            <td>Peak</td>
+                            <td>Swamp</td>                            
+                        </tr>
+
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">3</td>
+                            <td>Wetland</td>
+                            <td>Wasteland</td>
+                            <td>Forest</td>                            
+                        </tr>
+                        <tr>
+                            <td>Swamp</td>
+                            <td>Peak</td>
+                            <td>Marshland</td>                            
+                        </tr>
+                        
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">4</td>
+                            <td>Forest</td>
+                            <td>Mountain</td>
+                            <td>Swamp</td>                            
+                        </tr>
+                        <tr>
+                            <td>Marshland</td>
+                            <td>Peak</td>
+                            <td>Wasteland</td>                            
+                        </tr>
+                        
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">5</td>
+                            <td>Swamp</td>
+                            <td>Savannah</td>
+                            <td>Marshland</td>                            
+                        </tr>
+                        <tr>
+                            <td>Wasteland</td>
+                            <td>Peak</td>
+                            <td>Mountain</td>                            
+                        </tr>
+                        
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">6</td>
+                            <td>Marshland</td>
+                            <td>Plains</td>
+                            <td>Wasteland</td>                            
+                        </tr>
+                        <tr>
+                            <td>Mountain</td>
+                            <td>Peak</td>
+                            <td>Savannah</td>                            
+                        </tr>
+                        
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">7</td>
+                            <td>Wasteland</td>
+                            <td>Meadow</td>
+                            <td>Mountain</td>                            
+                        </tr>
+                        <tr>
+                            <td>Savannah</td>
+                            <td>Peak</td>
+                            <td>Plains</td>                            
+                        </tr>
+                        
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">8</td>
+                            <td>Mountain</td>
+                            <td>Wetland</td>
+                            <td>Savannah</td>                            
+                        </tr>
+                        <tr>
+                            <td>Plains</td>
+                            <td>Peak</td>
+                            <td>Meadow</td>                            
+                        </tr>
+                        
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">9</td>
+                            <td>Savannah</td>
+                            <td>Forest</td>
+                            <td>Plains</td>                            
+                        </tr>
+                        <tr>
+                            <td>Meadow</td>
+                            <td>Peak</td>
+                            <td>Wetland</td>                            
+                        </tr>
+                        
+                        <tr></tr>
+
+                        <tr>
+                            <td rowspan="2">10</td>
+                            <td>Plains</td>
+                            <td>Savannah</td>
+                            <td>Wetland</td>                            
+                        </tr>
+                        <tr>
+                            <td>Swamp</td>
+                            <td>Peak</td>
+                            <td>Wasteland</td>                            
+                        </tr>
+                    </tbody>
+                </table>
+            <br>
 
             <h2 id="chapter4safari">Blocks</h2>
             <p class="highlightSection">
                 After receiving the National Dex, and at least 3 in-game hours after completing the Second Challenge, the player will get a call from Boaba and be able to place blocks within the habitats, which will affect which Pokemon spawn. A player can place up to 30 blocks within each Habitat at a time. Initially, the player will have access to 6 block items. After 3 in game hours, Baoba will grant access to 6 more items. This continues 2 more times until the player has all 24 block items.
+            </p><br>
                 
                 <!--List item table-->
-            </p><br>
+                <table id="itemTable">
+                    <thead>
+                        <tr>
+                            <th>Block Type</th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Plains</td>
+                            <td>Shrubbery</td>
+                        </tr>
+                        <tr>
+                            <td>Red Flower</td>
+                        </tr>
+                        <tr>
+                            <td>White Flower</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Forest</td>
+                            <td>Tree</td>
+                        </tr>
+                        <tr>
+                            <td>Stump</td>
+                        </tr>
+                        <tr>
+                            <td>Branches</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Peak</td>
+                            <td>Small Rock</td>
+                        </tr>
+                        <tr>
+                            <td>Big Rock</td>
+                        </tr>
+                        <tr>
+                            <td>Mossy Rock</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Waterside</td>
+                            <td>Puddle</td>
+                        </tr>
+                        <tr>
+                            <td>Fountain</td>
+                        </tr>
+                        <tr>
+                            <td>Water Hole</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="12">Other</td>
+                            <td>Guidepost (R)</td>
+                        </tr>
+                        <tr>
+                            <td>Guidepost (L)</td>
+                        </tr>
+                        <tr>
+                            <td>Trash Can</td>
+                        </tr>
+                        <tr>
+                            <td>Long Fence 1</td>
+                        </tr>
+                        <tr>
+                            <td>Long Fence 2</td>
+                        </tr>
+                        <tr>
+                            <td>Your Statue</td>
+                        </tr>
+                        <tr>
+                            <td>Bench</td>
+                        </tr>
+                        <tr>
+                            <td>Your Flag</td>
+                        </tr>
+                        <tr>
+                            <td>Outside Lamp</td>
+                        </tr>
+                        <tr>
+                            <td>Short Fence 1</td>
+                        </tr>
+                        <tr>
+                            <td>Short Fence 2</td>
+                        </tr>
+                        <tr>
+                            <td>Signboard</td>
+                        </tr>  
+                    </tbody>
+                </table>
+            <br>
 
             <p>
                 These blocks, when placed, will affect which Pokemon will spawn in each area. Some Pokemon will begin to appear as soon as the objects are placed, while other Pokemon require a specific amount of time to pass with a habitat set within your 6 zones. An important distinction to note is that you do not need to have the <u>objects themselves</u> placed for a certain amount of days, rather, the habitat itself will upgrade itself as time goes on. Objects gain strength the longer a Habitat is active, and therefore will reduce the number of objects required to attract Pokemon. This strength will not be reverted, even if the Habitat is removed from your active zones. 
