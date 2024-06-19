@@ -12,6 +12,7 @@
                 <li><a href="/pages/guides/dnsExploit">The DNS Exploit (Mystery Gifts)</a></li>
                 <li><a href="/pages/guides/rareCandy">Farming Rare Candy</a></li>
                 <li><a href="/pages/guides/radar">Pokeradar Guide</a></li>
+                <li><a href="/pages/guides/johtoSafariZone">Johto Safari Zone</a></li>
             </ul>
             <h1>Resources</h1>
             <ul class="sidebarList">

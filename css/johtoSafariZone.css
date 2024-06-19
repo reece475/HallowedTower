@@ -1,18 +1,34 @@
-#layoutTable, #itemTable{
+#layoutTable, #itemTable, #blockTable{
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     border: 1px solid #CCC;
 }
 
-#layoutTable td, #itemTable td {
+#layoutTable td, #itemTable td, #blockTable td {
 	padding: 4px;
 	margin: 3px;
 	border: 1px solid #CCC;
 }
 
-#layoutTable th, #itemTable th {
+#layoutTable th, #itemTable th, #blockTable th {
 	background-color:var(--highlights);
 	color: var(--white);
 	font-weight: bold;
+}
+
+#plainsRow{
+	background-color: rgb(187, 100, 0);
+}
+
+#forestRow{
+	background-color: #004615;
+}
+
+#peakRow{
+	background-color: #502d00;
+}
+
+#watersideRow{
+	background-color: rgb(0, 55, 206);
 }
