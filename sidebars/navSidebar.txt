@@ -24,5 +24,6 @@
             <ul class="sidebarList">
                 <li><a href="/pages/fun/forgottenAreas">Forgotten Areas in Gen 4</a></li>
                 <li><a href="/pages/fun/huntGenerator">Shiny Hunt Generator</a></li>
+                <li><a href="/pages/fun/rotomWallpapers">Rotom Password Wallpapers</a></li>
             </ul>
             
